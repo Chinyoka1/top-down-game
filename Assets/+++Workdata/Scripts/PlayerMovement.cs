@@ -9,12 +9,12 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 moveInput;
     public float walkSpeed = 4f;
     public float runSpeed = 7f;
+    public List<Animator> animators;
 
     private Player_InputActions _inputActions;
     private InputAction _moveAction;
     private InputAction _runAction;
     private Rigidbody2D rb;
-    private Animator animator;
     private bool _isMoving;
     private bool _isRunning;
 
@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
         _moveAction = _inputActions.Player.Move;
         _runAction = _inputActions.Player.Run;
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
     }
 
     private void OnEnable()
@@ -85,12 +84,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void Animate()
     {
-        animator.SetBool(AnimatorStrings.isMoving, _isMoving);
-        animator.SetBool(AnimatorStrings.isRunning, _isRunning);
-        if (moveInput != Vector2.zero)
+        foreach (Animator animator in animators)
         {
-            animator.SetFloat(AnimatorStrings.directionX, moveInput.x);
-            animator.SetFloat(AnimatorStrings.directionY, moveInput.y);
+            animator.SetBool(AnimatorStrings.isMoving, _isMoving);
+            animator.SetBool(AnimatorStrings.isRunning, _isRunning);
+            if (moveInput != Vector2.zero)
+            {
+                animator.SetFloat(AnimatorStrings.directionX, moveInput.x);
+                animator.SetFloat(AnimatorStrings.directionY, moveInput.y);
+            }
         }
     }
 }
