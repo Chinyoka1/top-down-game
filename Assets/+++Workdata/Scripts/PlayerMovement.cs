@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
     private InputAction _runAction;
     private Rigidbody2D rb;
     private Animator animator;
-    private Vector2 lastMoveDirection;
     private bool _isMoving;
     private bool _isRunning;
 
@@ -48,6 +47,11 @@ public class PlayerMovement : MonoBehaviour
         _runAction.canceled -= Run;
     }
 
+    private void Update()
+    {
+        Animate();
+    }
+
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, moveInput.y * CurrentMoveSpeed);
@@ -63,19 +67,8 @@ public class PlayerMovement : MonoBehaviour
         {
             _isMoving = false;
         }
-        animator.SetBool("isMoving", _isMoving);
-
-        // save last move input
-        if (!_isMoving && moveInput.x != 0 || moveInput.y != 0)
-        {
-            lastMoveDirection = moveInput;
-            animator.SetFloat("lastMoveDirectionX", lastMoveDirection.x);
-            animator.SetFloat("lastMoveDirectionY", lastMoveDirection.y);
-        }
-        // set new move input
+        
         moveInput = context.ReadValue<Vector2>().normalized;
-        animator.SetFloat("directionX", moveInput.x);
-        animator.SetFloat("directionY", moveInput.y);
     }
 
     private void Run(InputAction.CallbackContext context)
@@ -88,6 +81,16 @@ public class PlayerMovement : MonoBehaviour
         {
             _isRunning = false;
         }
-        animator.SetBool("isRunning", _isRunning);
+    }
+
+    private void Animate()
+    {
+        animator.SetBool(AnimatorStrings.isMoving, _isMoving);
+        animator.SetBool(AnimatorStrings.isRunning, _isRunning);
+        if (moveInput != Vector2.zero)
+        {
+            animator.SetFloat(AnimatorStrings.directionX, moveInput.x);
+            animator.SetFloat(AnimatorStrings.directionY, moveInput.y);
+        }
     }
 }
