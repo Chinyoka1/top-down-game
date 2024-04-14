@@ -481,7 +481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveInput: {x: 0, y: 0}
-  walkSpeed: 5
+  walkSpeed: 4
+  runSpeed: 7
 --- !u!95 &568786336
 Animator:
   serializedVersion: 5
