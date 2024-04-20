@@ -160,7 +160,16 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 8, y: -13}
+        - {x: -1, y: -15}
+        - {x: -8, y: -14}
+        - {x: -12, y: -11}
+        - {x: -15, y: -8}
+        - {x: -10, y: -4}
+        - {x: 0, y: -3}
+        - {x: 11, y: -4}
+        - {x: 14, y: -9}
       tessellationDetail: 0
       bones: []
       spriteID: 8d51bb4f608597049bfd2a1ac2682c3b
@@ -181,7 +190,16 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 8, y: -13}
+        - {x: -1, y: -15}
+        - {x: -8, y: -14}
+        - {x: -12, y: -11}
+        - {x: -15, y: -8}
+        - {x: -10, y: -4}
+        - {x: 0, y: -3}
+        - {x: 11, y: -4}
+        - {x: 14, y: -9}
       tessellationDetail: 0
       bones: []
       spriteID: 87c5ce44b2df05247bde3fceb7481012
@@ -202,7 +220,16 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 8, y: -13}
+        - {x: -1, y: -15}
+        - {x: -8, y: -14}
+        - {x: -12, y: -11}
+        - {x: -15, y: -8}
+        - {x: -10, y: -4}
+        - {x: 0, y: -3}
+        - {x: 11, y: -4}
+        - {x: 14, y: -9}
       tessellationDetail: 0
       bones: []
       spriteID: d23e9f4b54f226142a7a1fcd8a6d5b1e
@@ -244,7 +271,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 8, y: -7}
+        - {x: 10, y: -10}
+        - {x: 6, y: -13}
+        - {x: 0, y: -15}
+        - {x: -5, y: -13}
+        - {x: -11, y: -11}
+        - {x: -8, y: -8}
+        - {x: -7, y: -4}
+        - {x: 0, y: -3}
+        - {x: 7, y: -4}
       tessellationDetail: 0
       bones: []
       spriteID: ba3ed1ba954de4f4ca32b43867bb96fa
