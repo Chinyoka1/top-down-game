@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: 9f6351ae317012e419611f54e8057a29
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: home exteriors, half-timber v1 doors_57
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 176
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f6e21782e74ec408dee96cbd9ff96a
+      internalID: -701278558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: home exteriors, half-timber v1 doors_74
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 80
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d02557f5907334eb02295f173d0c17
+      internalID: -597615453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: home exteriors, half-timber v1 doors_0
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 176
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cbcee9177a8de48b5a9accb11a2d45
+      internalID: 789910581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: home exteriors, half-timber v1 doors_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 176
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b5e03b81422b14b9e9aedcd58cacda
+      internalID: -129647787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: home exteriors, half-timber v1 doors_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 79
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359764af5082b974daa966d903b17cea
+      internalID: 511764171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      home exteriors, half-timber v1 doors_0: 789910581
+      home exteriors, half-timber v1 doors_1: -129647787
+      home exteriors, half-timber v1 doors_10: 612552223
+      home exteriors, half-timber v1 doors_11: -185820400
+      home exteriors, half-timber v1 doors_12: -450254986
+      home exteriors, half-timber v1 doors_13: 1711392723
+      home exteriors, half-timber v1 doors_14: 1652182084
+      home exteriors, half-timber v1 doors_15: -1001926755
+      home exteriors, half-timber v1 doors_16: -1764532565
+      home exteriors, half-timber v1 doors_17: 1922965640
+      home exteriors, half-timber v1 doors_18: 136172371
+      home exteriors, half-timber v1 doors_19: 1573540013
+      home exteriors, half-timber v1 doors_2: 511764171
+      home exteriors, half-timber v1 doors_20: -832133439
+      home exteriors, half-timber v1 doors_21: -268342874
+      home exteriors, half-timber v1 doors_22: 701360021
+      home exteriors, half-timber v1 doors_23: 1447102393
+      home exteriors, half-timber v1 doors_24: 1193236293
+      home exteriors, half-timber v1 doors_25: -1767302573
+      home exteriors, half-timber v1 doors_26: -962703084
+      home exteriors, half-timber v1 doors_27: -1501409010
+      home exteriors, half-timber v1 doors_28: 434766500
+      home exteriors, half-timber v1 doors_29: -1231370795
+      home exteriors, half-timber v1 doors_3: 1718215424
+      home exteriors, half-timber v1 doors_30: 2033967782
+      home exteriors, half-timber v1 doors_31: -1471523802
+      home exteriors, half-timber v1 doors_32: -210071537
+      home exteriors, half-timber v1 doors_33: -1262067785
+      home exteriors, half-timber v1 doors_34: -1937208038
+      home exteriors, half-timber v1 doors_35: -777101111
+      home exteriors, half-timber v1 doors_36: -450100879
+      home exteriors, half-timber v1 doors_37: -2068197146
+      home exteriors, half-timber v1 doors_38: 1815211307
+      home exteriors, half-timber v1 doors_39: 252521095
+      home exteriors, half-timber v1 doors_4: -310654851
+      home exteriors, half-timber v1 doors_40: -1286276224
+      home exteriors, half-timber v1 doors_41: 1019050195
+      home exteriors, half-timber v1 doors_42: -1900576807
+      home exteriors, half-timber v1 doors_43: 1608437228
+      home exteriors, half-timber v1 doors_44: 107140352
+      home exteriors, half-timber v1 doors_45: 1893901257
+      home exteriors, half-timber v1 doors_46: 691046578
+      home exteriors, half-timber v1 doors_47: 1121986430
+      home exteriors, half-timber v1 doors_48: -1187493619
+      home exteriors, half-timber v1 doors_49: 599088128
+      home exteriors, half-timber v1 doors_5: 837649012
+      home exteriors, half-timber v1 doors_50: 2049142354
+      home exteriors, half-timber v1 doors_51: -1645579890
+      home exteriors, half-timber v1 doors_52: -717797878
+      home exteriors, half-timber v1 doors_53: -1566599631
+      home exteriors, half-timber v1 doors_54: 1025713987
+      home exteriors, half-timber v1 doors_55: 1734487302
+      home exteriors, half-timber v1 doors_56: -1704495889
+      home exteriors, half-timber v1 doors_57: -701278558
+      home exteriors, half-timber v1 doors_58: -771669751
+      home exteriors, half-timber v1 doors_59: -1603135936
+      home exteriors, half-timber v1 doors_6: 1002099907
+      home exteriors, half-timber v1 doors_60: 1768030663
+      home exteriors, half-timber v1 doors_61: -1996293771
+      home exteriors, half-timber v1 doors_62: -699577790
+      home exteriors, half-timber v1 doors_63: -1946300995
+      home exteriors, half-timber v1 doors_64: 1374154552
+      home exteriors, half-timber v1 doors_65: 2145300056
+      home exteriors, half-timber v1 doors_66: -799430714
+      home exteriors, half-timber v1 doors_67: -1849032004
+      home exteriors, half-timber v1 doors_68: -936552236
+      home exteriors, half-timber v1 doors_69: -1092951974
+      home exteriors, half-timber v1 doors_7: 2071477366
+      home exteriors, half-timber v1 doors_70: -38015916
+      home exteriors, half-timber v1 doors_71: -1420740824
+      home exteriors, half-timber v1 doors_72: -646422040
+      home exteriors, half-timber v1 doors_73: 189926475
+      home exteriors, half-timber v1 doors_74: -597615453
+      home exteriors, half-timber v1 doors_75: 1915608499
+      home exteriors, half-timber v1 doors_76: 1082463791
+      home exteriors, half-timber v1 doors_77: 1663040168
+      home exteriors, half-timber v1 doors_78: 287118387
+      home exteriors, half-timber v1 doors_79: 348954750
+      home exteriors, half-timber v1 doors_8: -1725508255
+      home exteriors, half-timber v1 doors_80: -1789859969
+      home exteriors, half-timber v1 doors_81: -173856319
+      home exteriors, half-timber v1 doors_82: -1665358169
+      home exteriors, half-timber v1 doors_83: 1775430533
+      home exteriors, half-timber v1 doors_84: -1429993886
+      home exteriors, half-timber v1 doors_85: -1687945615
+      home exteriors, half-timber v1 doors_86: 615007988
+      home exteriors, half-timber v1 doors_87: -1598258066
+      home exteriors, half-timber v1 doors_88: 764949564
+      home exteriors, half-timber v1 doors_89: 2050430548
+      home exteriors, half-timber v1 doors_9: -1970516620
+      home exteriors, half-timber v1 doors_90: 178249002
+      home exteriors, half-timber v1 doors_91: 960999766
+      home exteriors, half-timber v1 doors_92: 1444291756
+      home exteriors, half-timber v1 doors_93: -1550840123
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
