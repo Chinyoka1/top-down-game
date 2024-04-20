@@ -86,12 +86,15 @@ public class PlayerMovement : MonoBehaviour
     {
         foreach (Animator animator in animators)
         {
-            animator.SetBool(AnimatorStrings.isMoving, _isMoving);
-            animator.SetBool(AnimatorStrings.isRunning, _isRunning);
-            if (moveInput != Vector2.zero)
+            if (animator.gameObject.activeInHierarchy)
             {
-                animator.SetFloat(AnimatorStrings.directionX, moveInput.x);
-                animator.SetFloat(AnimatorStrings.directionY, moveInput.y);
+                animator.SetBool(AnimatorStrings.isMoving, _isMoving);
+                animator.SetBool(AnimatorStrings.isRunning, _isRunning);
+                if (moveInput != Vector2.zero)
+                {
+                    animator.SetFloat(AnimatorStrings.directionX, moveInput.x);
+                    animator.SetFloat(AnimatorStrings.directionY, moveInput.y);
+                }
             }
         }
     }

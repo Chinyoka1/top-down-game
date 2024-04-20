@@ -1,0 +1,422 @@
+fileFormatVersion: 2
+guid: 6468604792550dd40bec66fe9e4b7cbe
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FG_Fortress_Doors_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f072573223bdbec4e9c6230f4b636eab
+      internalID: 1079693939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_Fortress_Doors_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 224
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ced6c50f5363746b30c21cddad506a
+      internalID: -410707338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_Fortress_Doors_6
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c249d0502a93541b4a3da40f84b7b1
+      internalID: -1483991028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_Fortress_Doors_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 224
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f69a8c1e22e8b54689dc90414f61cd2
+      internalID: -645189324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_Fortress_Doors_8
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36b2a2dd86276043ba99696e1eedab5
+      internalID: -526393614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_Fortress_Doors_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427b23bbdff2c954f9d3e3a5a2cbad39
+      internalID: 1383791784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_Fortress_Doors_14
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 192
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f4540f715ff8843aaf27cdd1e292ac
+      internalID: 482796583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_Fortress_Doors_15
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408077d6477ad584c9b4348f28ab0021
+      internalID: 1374140078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_Fortress_Doors_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 192
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c37b1e290c82a4ab5ee941900fd241
+      internalID: 1837305040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_Fortress_Doors_17
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c399ab5c5ebfd4fba20b0c0b45fefe
+      internalID: 1681402511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FG_Fortress_Doors_0: 1481147603
+      FG_Fortress_Doors_1: 1045487920
+      FG_Fortress_Doors_10: -1415374801
+      FG_Fortress_Doors_11: -1910658029
+      FG_Fortress_Doors_12: -945944889
+      FG_Fortress_Doors_13: 1383791784
+      FG_Fortress_Doors_14: 482796583
+      FG_Fortress_Doors_15: 1374140078
+      FG_Fortress_Doors_16: 1837305040
+      FG_Fortress_Doors_17: 1681402511
+      FG_Fortress_Doors_18: 1576168360
+      FG_Fortress_Doors_19: 184668714
+      FG_Fortress_Doors_2: -1973709920
+      FG_Fortress_Doors_20: -173298838
+      FG_Fortress_Doors_21: 241606426
+      FG_Fortress_Doors_22: -1103722945
+      FG_Fortress_Doors_23: -1459171041
+      FG_Fortress_Doors_24: -2092034042
+      FG_Fortress_Doors_25: 895490955
+      FG_Fortress_Doors_26: -1494882932
+      FG_Fortress_Doors_27: -293657464
+      FG_Fortress_Doors_28: -1528153856
+      FG_Fortress_Doors_29: -1314365571
+      FG_Fortress_Doors_3: -1137954926
+      FG_Fortress_Doors_30: -1216099728
+      FG_Fortress_Doors_31: 1474251014
+      FG_Fortress_Doors_32: -1619852759
+      FG_Fortress_Doors_33: -2032273264
+      FG_Fortress_Doors_34: -173294624
+      FG_Fortress_Doors_35: 499834899
+      FG_Fortress_Doors_36: -1817289407
+      FG_Fortress_Doors_37: -41663037
+      FG_Fortress_Doors_38: -175044004
+      FG_Fortress_Doors_39: -940077990
+      FG_Fortress_Doors_4: 1079693939
+      FG_Fortress_Doors_40: 1428634373
+      FG_Fortress_Doors_41: -2112580693
+      FG_Fortress_Doors_42: -1258853753
+      FG_Fortress_Doors_43: 1743504348
+      FG_Fortress_Doors_44: -895672034
+      FG_Fortress_Doors_45: -1969027521
+      FG_Fortress_Doors_46: -1439099519
+      FG_Fortress_Doors_47: 456986374
+      FG_Fortress_Doors_48: 708619386
+      FG_Fortress_Doors_49: 464570368
+      FG_Fortress_Doors_5: -410707338
+      FG_Fortress_Doors_50: 766907798
+      FG_Fortress_Doors_51: -299138334
+      FG_Fortress_Doors_52: 1371688173
+      FG_Fortress_Doors_53: -291731539
+      FG_Fortress_Doors_54: 2094074488
+      FG_Fortress_Doors_55: -199391354
+      FG_Fortress_Doors_56: 1886444324
+      FG_Fortress_Doors_57: -312758313
+      FG_Fortress_Doors_58: -1371577531
+      FG_Fortress_Doors_59: -552686799
+      FG_Fortress_Doors_6: -1483991028
+      FG_Fortress_Doors_60: 659989462
+      FG_Fortress_Doors_61: 1125949865
+      FG_Fortress_Doors_62: -964284577
+      FG_Fortress_Doors_63: -1471849048
+      FG_Fortress_Doors_64: 359895252
+      FG_Fortress_Doors_65: -854023549
+      FG_Fortress_Doors_66: 1759149993
+      FG_Fortress_Doors_67: 1109962969
+      FG_Fortress_Doors_68: -1079106397
+      FG_Fortress_Doors_69: 19399806
+      FG_Fortress_Doors_7: -645189324
+      FG_Fortress_Doors_70: -1723770550
+      FG_Fortress_Doors_71: 819354367
+      FG_Fortress_Doors_8: -526393614
+      FG_Fortress_Doors_9: -776684431
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
