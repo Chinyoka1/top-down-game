@@ -13,17 +13,17 @@ public class Door_Trigger : MonoBehaviour
     **/
     public Sprite[] doorSprites;
     
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (collider.CompareTag("Player"))
+        if (col.CompareTag("Player"))
         {
             sr.sprite = doorSprites[1];
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collider)
+    private void OnTriggerExit2D(Collider2D col)
     {
-        if (collider.CompareTag("Player"))
+        if (col.CompareTag("Player"))
         {
             sr.sprite = doorSprites[0];
         }
