@@ -1,0 +1,888 @@
+fileFormatVersion: 2
+guid: ac45e7778fa003f44bdd3eee95a926f9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 112
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -27.5}
+        - {x: -5, y: -27.5}
+        - {x: -8, y: -25.5}
+        - {x: -8, y: -22.5}
+        - {x: -6, y: -20.5}
+        - {x: -2, y: -19.5}
+        - {x: 2, y: -19.5}
+        - {x: 6, y: -20.5}
+        - {x: 8, y: -22.5}
+        - {x: 8, y: -25.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a6e47d9198067488725dd552c2f610
+      internalID: 1320053618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 112
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -27.5}
+        - {x: -5, y: -27.5}
+        - {x: -8, y: -25.5}
+        - {x: -8, y: -22.5}
+        - {x: -6, y: -20.5}
+        - {x: -2, y: -19.5}
+        - {x: 2, y: -19.5}
+        - {x: 6, y: -20.5}
+        - {x: 8, y: -22.5}
+        - {x: 8, y: -25.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e876b7e19255940975bfd681257eaf
+      internalID: 2118328770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 112
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -27.5}
+        - {x: -5, y: -27.5}
+        - {x: -8, y: -25.5}
+        - {x: -8, y: -22.5}
+        - {x: -6, y: -20.5}
+        - {x: -2, y: -19.5}
+        - {x: 2, y: -19.5}
+        - {x: 6, y: -20.5}
+        - {x: 8, y: -22.5}
+        - {x: 8, y: -25.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d51e2678bdb7a24ca5087762362cf49
+      internalID: -1399498328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 112
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -27.5}
+        - {x: -5, y: -27.5}
+        - {x: -8, y: -25.5}
+        - {x: -8, y: -22.5}
+        - {x: -6, y: -20.5}
+        - {x: -2, y: -19.5}
+        - {x: 2, y: -19.5}
+        - {x: 6, y: -20.5}
+        - {x: 8, y: -22.5}
+        - {x: 8, y: -25.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca6fc51565322546b9f6a6e3627b4c9
+      internalID: -53778910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 112
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -27.5}
+        - {x: -5, y: -27.5}
+        - {x: -8, y: -25.5}
+        - {x: -8, y: -22.5}
+        - {x: -6, y: -20.5}
+        - {x: -2, y: -19.5}
+        - {x: 2, y: -19.5}
+        - {x: 6, y: -20.5}
+        - {x: 8, y: -22.5}
+        - {x: 8, y: -25.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bc5bf212b619a43b03cd3586f0c65b
+      internalID: 1372272892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -27.5}
+        - {x: -5, y: -27.5}
+        - {x: -8, y: -25.5}
+        - {x: -8, y: -22.5}
+        - {x: -6, y: -20.5}
+        - {x: -2, y: -19.5}
+        - {x: 2, y: -19.5}
+        - {x: 6, y: -20.5}
+        - {x: 8, y: -22.5}
+        - {x: 8, y: -25.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf7cfad3f9054c4e99c9785d7318d00
+      internalID: 506498139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_6
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 32
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -27.5}
+        - {x: -5, y: -27.5}
+        - {x: -8, y: -25.5}
+        - {x: -8, y: -22.5}
+        - {x: -6, y: -20.5}
+        - {x: -2, y: -19.5}
+        - {x: 2, y: -19.5}
+        - {x: 6, y: -20.5}
+        - {x: 8, y: -22.5}
+        - {x: 8, y: -25.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7faf60bc90b047148bddddae8d8249ad
+      internalID: -1423954974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -27.5}
+        - {x: -5, y: -27.5}
+        - {x: -8, y: -25.5}
+        - {x: -8, y: -22.5}
+        - {x: -6, y: -20.5}
+        - {x: -2, y: -19.5}
+        - {x: 2, y: -19.5}
+        - {x: 6, y: -20.5}
+        - {x: 8, y: -22.5}
+        - {x: 8, y: -25.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738bbba623401434aa85521d98be0ad7
+      internalID: 1652823242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 32
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -27.5}
+        - {x: -5, y: -27.5}
+        - {x: -8, y: -25.5}
+        - {x: -8, y: -22.5}
+        - {x: -6, y: -20.5}
+        - {x: -2, y: -19.5}
+        - {x: 2, y: -19.5}
+        - {x: 6, y: -20.5}
+        - {x: 8, y: -22.5}
+        - {x: 8, y: -25.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ad637186b180b44afe245d7999ed97
+      internalID: 801850110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -27.5}
+        - {x: -5, y: -27.5}
+        - {x: -8, y: -25.5}
+        - {x: -8, y: -22.5}
+        - {x: -6, y: -20.5}
+        - {x: -2, y: -19.5}
+        - {x: 2, y: -19.5}
+        - {x: 6, y: -20.5}
+        - {x: 8, y: -22.5}
+        - {x: 8, y: -25.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493d1fe55c3520847a6926e597219d4c
+      internalID: -886836453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_10
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 274
+        width: 27
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3.5, y: -22}
+        - {x: -4.5, y: -20}
+        - {x: -4.5, y: -16}
+        - {x: -1.5, y: -15}
+        - {x: 1.5, y: -15}
+        - {x: 4.5, y: -16}
+        - {x: 4.5, y: -20}
+        - {x: 2.5, y: -22}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c2da2ddc44a424b8510fa16c648bd7
+      internalID: 2013086772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_11
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 274
+        width: 29
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3.5, y: -18}
+        - {x: -4.5, y: -16}
+        - {x: -4.5, y: -13}
+        - {x: -1.5, y: -12}
+        - {x: 1.5, y: -12}
+        - {x: 4.5, y: -13}
+        - {x: 4.5, y: -16}
+        - {x: 2.5, y: -18}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3eed9add988b548aaeaf79e70203b6
+      internalID: -1690110613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 462
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a6a5af2e082aa418138409f1f34663
+      internalID: 1694525958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 462
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c831bad7f81a754489d4aea2b73dff8c
+      internalID: -2016025000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 434
+        width: 32
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1, y: -13}
+        - {x: -3, y: -10}
+        - {x: 1, y: -9}
+        - {x: 5, y: -10}
+        - {x: 2, y: -13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25100244e17a00049b2f2ed49d5f4663
+      internalID: 1021517856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 434
+        width: 32
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: -13}
+        - {x: -5, y: -10}
+        - {x: -1, y: -9}
+        - {x: 3, y: -10}
+        - {x: 1, y: -13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b11e75a1d95f5f4f892c8cb7403e52e
+      internalID: 176345469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 386
+        width: 32
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: -14.5}
+        - {x: -4, y: -9.5}
+        - {x: 1, y: -8.5}
+        - {x: 6, y: -9.5}
+        - {x: 6, y: -12.5}
+        - {x: 4, y: -14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4735a0845c5c72543a9f62eb6ef58bc8
+      internalID: -1718247216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_17
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 386
+        width: 32
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: -14.5}
+        - {x: -6, y: -11.5}
+        - {x: -5, y: -9.5}
+        - {x: 0, y: -8.5}
+        - {x: 4, y: -9.5}
+        - {x: 2, y: -14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752d09c54d8e3d94f890dcd34c1c6bd3
+      internalID: -1102861112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_18
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 19
+        width: 27
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3.5, y: -22}
+        - {x: -4.5, y: -20}
+        - {x: -4.5, y: -16}
+        - {x: -1.5, y: -15}
+        - {x: 1.5, y: -15}
+        - {x: 4.5, y: -16}
+        - {x: 4.5, y: -20}
+        - {x: 2.5, y: -22}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167b301e6ae1641448b54d35d721de87
+      internalID: 221234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_19
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 19
+        width: 29
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3.5, y: -18}
+        - {x: -4.5, y: -16}
+        - {x: -4.5, y: -13}
+        - {x: -1.5, y: -12}
+        - {x: 1.5, y: -12}
+        - {x: 4.5, y: -13}
+        - {x: 4.5, y: -16}
+        - {x: 2.5, y: -18}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244cb1a56d5e2fc499a1c99e6141a8eb
+      internalID: 790820951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 206
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078e9533c2c1eb84b8689e6c7a01c3a1
+      internalID: -398012644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 206
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7759f996fe55d42b67d60298f0645b
+      internalID: 803405334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 179
+        width: 32
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1, y: -13}
+        - {x: -3, y: -10}
+        - {x: 1, y: -9}
+        - {x: 5, y: -10}
+        - {x: 2, y: -13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40c8bfe302ab5149991a2584c24a636
+      internalID: -1276139258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 179
+        width: 32
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: -13}
+        - {x: -5, y: -10}
+        - {x: -1, y: -9}
+        - {x: 3, y: -10}
+        - {x: 1, y: -13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5feda1f62919e4aaeefc277c3686f8
+      internalID: 769032676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 32
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: -13.5}
+        - {x: -4, y: -9.5}
+        - {x: 1, y: -8.5}
+        - {x: 6, y: -9.5}
+        - {x: 6, y: -12.5}
+        - {x: 4, y: -13.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3cd32884e3a9d4d929e62e8f05bb39
+      internalID: 729200472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Enchanted_Forest_Mushrooms_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 130
+        width: 32
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: -13.5}
+        - {x: -6, y: -11.5}
+        - {x: -5, y: -9.5}
+        - {x: 0, y: -8.5}
+        - {x: 4, y: -9.5}
+        - {x: 2, y: -13.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdf8e9925655dd4a9cce420431a3071
+      internalID: -867406198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FDR_Enchanted_Forest_Mushrooms_0: 1320053618
+      FDR_Enchanted_Forest_Mushrooms_1: 2118328770
+      FDR_Enchanted_Forest_Mushrooms_10: 2013086772
+      FDR_Enchanted_Forest_Mushrooms_11: -1690110613
+      FDR_Enchanted_Forest_Mushrooms_12: 1694525958
+      FDR_Enchanted_Forest_Mushrooms_13: -2016025000
+      FDR_Enchanted_Forest_Mushrooms_14: 1021517856
+      FDR_Enchanted_Forest_Mushrooms_15: 176345469
+      FDR_Enchanted_Forest_Mushrooms_16: -1718247216
+      FDR_Enchanted_Forest_Mushrooms_17: -1102861112
+      FDR_Enchanted_Forest_Mushrooms_18: 221234
+      FDR_Enchanted_Forest_Mushrooms_19: 790820951
+      FDR_Enchanted_Forest_Mushrooms_2: -1399498328
+      FDR_Enchanted_Forest_Mushrooms_20: -398012644
+      FDR_Enchanted_Forest_Mushrooms_21: 803405334
+      FDR_Enchanted_Forest_Mushrooms_22: -1276139258
+      FDR_Enchanted_Forest_Mushrooms_23: 769032676
+      FDR_Enchanted_Forest_Mushrooms_24: 729200472
+      FDR_Enchanted_Forest_Mushrooms_25: -867406198
+      FDR_Enchanted_Forest_Mushrooms_3: -53778910
+      FDR_Enchanted_Forest_Mushrooms_4: 1372272892
+      FDR_Enchanted_Forest_Mushrooms_5: 506498139
+      FDR_Enchanted_Forest_Mushrooms_6: -1423954974
+      FDR_Enchanted_Forest_Mushrooms_7: 1652823242
+      FDR_Enchanted_Forest_Mushrooms_8: 801850110
+      FDR_Enchanted_Forest_Mushrooms_9: -886836453
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
