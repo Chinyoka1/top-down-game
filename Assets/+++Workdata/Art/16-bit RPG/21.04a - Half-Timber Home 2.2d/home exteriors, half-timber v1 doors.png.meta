@@ -165,12 +165,12 @@ TextureImporter:
       name: home exteriors, half-timber v1 doors_57
       rect:
         serializedVersion: 2
-        x: 432
+        x: 448
         y: 176
-        width: 64
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,12 +186,12 @@ TextureImporter:
       name: home exteriors, half-timber v1 doors_74
       rect:
         serializedVersion: 2
-        x: 432
+        x: 448
         y: 80
-        width: 64
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -204,36 +204,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: home exteriors, half-timber v1 doors_0
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 176
-        width: 64
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30cbcee9177a8de48b5a9accb11a2d45
-      internalID: 789910581
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: home exteriors, half-timber v1 doors_1
       rect:
         serializedVersion: 2
-        x: 352
+        x: 368
         y: 176
-        width: 64
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,12 +228,12 @@ TextureImporter:
       name: home exteriors, half-timber v1 doors_2
       rect:
         serializedVersion: 2
-        x: 352
-        y: 79
-        width: 64
-        height: 33
+        x: 368
+        y: 80
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

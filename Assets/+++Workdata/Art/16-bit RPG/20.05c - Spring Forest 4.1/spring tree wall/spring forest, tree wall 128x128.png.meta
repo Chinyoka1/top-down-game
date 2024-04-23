@@ -376,9 +376,9 @@ TextureImporter:
         - {x: 64, y: -64}
         - {x: 57, y: -49}
         - {x: 44, y: -48}
-        - {x: 34, y: -39}
+        - {x: 35, y: -38}
         - {x: 23, y: -32}
-        - {x: 24, y: -2}
+        - {x: 29, y: -10}
         - {x: 22, y: 16}
         - {x: 42, y: 34}
         - {x: 49, y: 51}
@@ -426,13 +426,17 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -54, y: 64}
+      - - {x: -59, y: 64}
+        - {x: -51, y: 40}
         - {x: -42, y: 34}
         - {x: -43, y: 9}
         - {x: -32, y: 3}
         - {x: -24, y: -3}
+        - {x: -29, y: -12}
         - {x: -29, y: -34}
-        - {x: -53, y: -64}
+        - {x: -43, y: -31}
+        - {x: -54, y: -39}
+        - {x: -58, y: -64}
         - {x: 64, y: -64}
         - {x: 64, y: 64}
       tessellationDetail: 0
@@ -476,7 +480,26 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 49, y: 42}
+        - {x: 40, y: 35}
+        - {x: 32, y: 48}
+        - {x: 20, y: 48}
+        - {x: 10, y: 40}
+        - {x: 5, y: 19}
+        - {x: -9, y: 34}
+        - {x: -24, y: 40}
+        - {x: -47, y: 28}
+        - {x: -60, y: 10}
+        - {x: -60.625, y: -1.5625}
+        - {x: -47, y: -19}
+        - {x: -32, y: -32}
+        - {x: -41, y: -32}
+        - {x: -54, y: -38}
+        - {x: -58, y: -50}
+        - {x: -59, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 47}
       tessellationDetail: 0
       bones: []
       spriteID: 0831c88ebf1b70a4dad10ebb466c0c34
@@ -497,7 +520,21 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -2, y: 29}
+        - {x: -23, y: 41}
+        - {x: -48, y: 48}
+        - {x: -64, y: 48}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 61, y: -50}
+        - {x: 46, y: -55}
+        - {x: 37, y: -40}
+        - {x: 14, y: -31}
+        - {x: 8, y: -18}
+        - {x: 2, y: -16}
+        - {x: 12, y: -1}
+        - {x: 12, y: 10}
       tessellationDetail: 0
       bones: []
       spriteID: 55f0cec674446884491523c968babc44
@@ -519,10 +556,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 17, y: 22}
-        - {x: 17, y: 64}
+      - - {x: -64, y: -64}
+        - {x: -64, y: 64}
         - {x: 64, y: 64}
-        - {x: 64, y: 22}
+        - {x: 64, y: -64}
       tessellationDetail: 0
       bones: []
       spriteID: 23a480778e841fa499e6c80d99ee5342
@@ -543,7 +580,25 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 50, y: 42}
+        - {x: 40, y: 36}
+        - {x: 34, y: 45}
+        - {x: 26, y: 48}
+        - {x: 17, y: 47}
+        - {x: 10, y: 41}
+        - {x: 6, y: 25}
+        - {x: -2, y: 19}
+        - {x: -8, y: 17}
+        - {x: -9, y: 24}
+        - {x: -12, y: 28}
+        - {x: -18, y: 26}
+        - {x: -30, y: 40}
+        - {x: -46, y: 48}
+        - {x: -64, y: 48}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 47}
       tessellationDetail: 0
       bones: []
       spriteID: 39cb86be84904934d8865fec8151d23e
@@ -564,7 +619,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -59, y: 64}
+        - {x: -54, y: 49}
+        - {x: -64, y: 48}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
       tessellationDetail: 0
       bones: []
       spriteID: 05823cd6c5b384841888db521915e2e3
@@ -607,7 +668,9 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -48, y: 64}
+      - - {x: -58, y: 64}
+        - {x: -55, y: 45}
+        - {x: -45, y: 34}
         - {x: -43, y: 6}
         - {x: -20, y: 1}
         - {x: 0, y: -16}
