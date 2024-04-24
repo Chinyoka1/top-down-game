@@ -20244,8 +20244,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_958
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 480
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -20265,8 +20265,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_959
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 496
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -20286,7 +20286,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_960
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 16
         width: 16
         height: 16
@@ -20307,7 +20307,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_961
       rect:
         serializedVersion: 2
-        x: 48
+        x: 16
         y: 16
         width: 16
         height: 16
@@ -20328,7 +20328,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_962
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 16
         width: 16
         height: 16
@@ -20349,7 +20349,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_963
       rect:
         serializedVersion: 2
-        x: 80
+        x: 48
         y: 16
         width: 16
         height: 16
@@ -20370,7 +20370,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_964
       rect:
         serializedVersion: 2
-        x: 96
+        x: 64
         y: 16
         width: 16
         height: 16
@@ -20391,7 +20391,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_965
       rect:
         serializedVersion: 2
-        x: 112
+        x: 80
         y: 16
         width: 16
         height: 16
@@ -20412,7 +20412,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_966
       rect:
         serializedVersion: 2
-        x: 128
+        x: 96
         y: 16
         width: 16
         height: 16
@@ -20433,7 +20433,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_967
       rect:
         serializedVersion: 2
-        x: 144
+        x: 112
         y: 16
         width: 16
         height: 16
@@ -20454,7 +20454,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_968
       rect:
         serializedVersion: 2
-        x: 160
+        x: 128
         y: 16
         width: 16
         height: 16
@@ -20475,7 +20475,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_969
       rect:
         serializedVersion: 2
-        x: 176
+        x: 144
         y: 16
         width: 16
         height: 16
@@ -20496,7 +20496,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_970
       rect:
         serializedVersion: 2
-        x: 192
+        x: 160
         y: 16
         width: 16
         height: 16
@@ -20517,7 +20517,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_971
       rect:
         serializedVersion: 2
-        x: 208
+        x: 176
         y: 16
         width: 16
         height: 16
@@ -20538,7 +20538,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_972
       rect:
         serializedVersion: 2
-        x: 224
+        x: 192
         y: 16
         width: 16
         height: 16
@@ -20559,7 +20559,7 @@ TextureImporter:
       name: RA_Item_Icons01_2_973
       rect:
         serializedVersion: 2
-        x: 240
+        x: 208
         y: 16
         width: 16
         height: 16
@@ -20580,8 +20580,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_974
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 224
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20601,8 +20601,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_975
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 240
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20622,8 +20622,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_976
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 256
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20643,8 +20643,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_977
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
+        x: 272
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20664,8 +20664,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_978
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 288
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20685,8 +20685,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_979
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
+        x: 304
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20706,8 +20706,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_980
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
+        x: 320
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20727,8 +20727,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_981
       rect:
         serializedVersion: 2
-        x: 112
-        y: 0
+        x: 336
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20748,8 +20748,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_982
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 352
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20769,8 +20769,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_983
       rect:
         serializedVersion: 2
-        x: 144
-        y: 0
+        x: 368
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20790,8 +20790,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_984
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
+        x: 384
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20811,8 +20811,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_985
       rect:
         serializedVersion: 2
-        x: 176
-        y: 0
+        x: 400
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20832,8 +20832,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_986
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
+        x: 416
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20853,8 +20853,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_987
       rect:
         serializedVersion: 2
-        x: 208
-        y: 0
+        x: 432
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20874,8 +20874,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_988
       rect:
         serializedVersion: 2
-        x: 224
-        y: 0
+        x: 448
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20895,8 +20895,8 @@ TextureImporter:
       name: RA_Item_Icons01_2_989
       rect:
         serializedVersion: 2
-        x: 240
-        y: 0
+        x: 464
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -20908,6 +20908,720 @@ TextureImporter:
       bones: []
       spriteID: 41944a1b0e5be844da425263a6c9470d
       internalID: -1980226033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_990
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3215e8a815f03894f895d106cbd1a765
+      internalID: 996578913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_991
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7278f473e3cb74499931cff7ebd2a8a
+      internalID: 880059912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_992
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d936b3d8d4ca1e5449b11e2ea1e68f05
+      internalID: 535500138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_993
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e806b4810844edc4cb43dc3a75ede398
+      internalID: -699905587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_994
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd25249bc9631d641936e8fc369354a9
+      internalID: -6751607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_995
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6de134d6eee43549835c603225b1a4c
+      internalID: 518943598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_996
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f511ace37eee12e428e172b4a233d62a
+      internalID: 801250116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_997
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7acad548a7515264c9b0b699531c7f82
+      internalID: 24604136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_998
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114531fc672868f49960fa36aa37fea7
+      internalID: 305391636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_999
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032a89ed192d78140a8d6c3a7148d02b
+      internalID: -811993730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1000
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c53a326c73f7b43995a0b65b84004f
+      internalID: 802609832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1001
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed4b13ebad15c34daf85083e9f29bf7
+      internalID: 1245809369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1002
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4f03fb09257ca4d83e72cd32a6dcfd
+      internalID: -1559499453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1003
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58828e0608dbf0d40b72aeb2add79a2d
+      internalID: -1711842173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1004
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421506ca493d4b64086a1d17924a9660
+      internalID: -1308604951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1005
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a3b72a3f3a3104982222f14964c10b
+      internalID: -335880459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1006
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8bc53d3577258458f0d049eedace26
+      internalID: 1266714498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1007
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b4fe7609bf61840ac3eeb6afb9ec8b
+      internalID: -1692569982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1008
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33737e67a405b0d4586237eb85c02cb5
+      internalID: 505973716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1009
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796414d4dd5d2d144bcf90119f9074d2
+      internalID: 1790976699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1010
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502deafc6495ecb44a4c452bc8c45f82
+      internalID: -1024489217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1011
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33eae98187d93b429304e04c3957099
+      internalID: -434305303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1012
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbf2210f4baa4c4aa42f0499b5c0319
+      internalID: -479954129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1013
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06570a0ba7b21a24a98854c7e0949c14
+      internalID: -1777106266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1014
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2eec4c5f1e7d24fbd956c37ed933a9
+      internalID: 1078020961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1015
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3e4e68f26915347ba2383b4261a67f
+      internalID: -1423506184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1016
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f40fe7db5c4b24385069b10ffc9ca4
+      internalID: 1314047412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1017
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e176ddd0258c7b34e934a51171f415b0
+      internalID: 162268805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1018
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2158df51be3254b86e5b840bee648a
+      internalID: -738407591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1019
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0f2b511d7059142bc132add507198c
+      internalID: 1941999570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1020
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d800ebdf0f448294d84763a3c877d671
+      internalID: -868871836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1021
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6aff3356eb08b419128ae82400f6dd
+      internalID: 1394884232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1022
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1eaf566f5b2b944b0d556d56f8f6b3
+      internalID: 1352003964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Item_Icons01_2_1023
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e876a735454604c90dc67573d78aa4
+      internalID: 737323891
       vertices: []
       indices: 
       edges: []
@@ -20927,8 +21641,32 @@ TextureImporter:
       RA_Item_Icons01_2_1: 1993420109
       RA_Item_Icons01_2_10: 428150830
       RA_Item_Icons01_2_100: -1841341046
+      RA_Item_Icons01_2_1000: 802609832
+      RA_Item_Icons01_2_1001: 1245809369
+      RA_Item_Icons01_2_1002: -1559499453
+      RA_Item_Icons01_2_1003: -1711842173
+      RA_Item_Icons01_2_1004: -1308604951
+      RA_Item_Icons01_2_1005: -335880459
+      RA_Item_Icons01_2_1006: 1266714498
+      RA_Item_Icons01_2_1007: -1692569982
+      RA_Item_Icons01_2_1008: 505973716
+      RA_Item_Icons01_2_1009: 1790976699
       RA_Item_Icons01_2_101: 1072855117
+      RA_Item_Icons01_2_1010: -1024489217
+      RA_Item_Icons01_2_1011: -434305303
+      RA_Item_Icons01_2_1012: -479954129
+      RA_Item_Icons01_2_1013: -1777106266
+      RA_Item_Icons01_2_1014: 1078020961
+      RA_Item_Icons01_2_1015: -1423506184
+      RA_Item_Icons01_2_1016: 1314047412
+      RA_Item_Icons01_2_1017: 162268805
+      RA_Item_Icons01_2_1018: -738407591
+      RA_Item_Icons01_2_1019: 1941999570
       RA_Item_Icons01_2_102: -1165539706
+      RA_Item_Icons01_2_1020: -868871836
+      RA_Item_Icons01_2_1021: 1394884232
+      RA_Item_Icons01_2_1022: 1352003964
+      RA_Item_Icons01_2_1023: 737323891
       RA_Item_Icons01_2_103: -592085602
       RA_Item_Icons01_2_104: -1130187642
       RA_Item_Icons01_2_105: 1403885564
@@ -21913,6 +22651,16 @@ TextureImporter:
       RA_Item_Icons01_2_988: 1403611365
       RA_Item_Icons01_2_989: -1980226033
       RA_Item_Icons01_2_99: 937155920
+      RA_Item_Icons01_2_990: 996578913
+      RA_Item_Icons01_2_991: 880059912
+      RA_Item_Icons01_2_992: 535500138
+      RA_Item_Icons01_2_993: -699905587
+      RA_Item_Icons01_2_994: -6751607
+      RA_Item_Icons01_2_995: 518943598
+      RA_Item_Icons01_2_996: 801250116
+      RA_Item_Icons01_2_997: 24604136
+      RA_Item_Icons01_2_998: 305391636
+      RA_Item_Icons01_2_999: -811993730
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private bool _isRunning;
 
     private float CurrentMoveSpeed => _isRunning ? runSpeed : walkSpeed;
+    private bool MovementLocked => DialogueManager.GetInstance().isPlaying;
 
     private void Awake()
     {
@@ -48,7 +49,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Animate();
+        if (!MovementLocked)
+        {
+            Animate();
+        }
     }
 
     private void FixedUpdate()
@@ -66,8 +70,11 @@ public class PlayerMovement : MonoBehaviour
         {
             _isMoving = false;
         }
-        
-        moveInput = context.ReadValue<Vector2>().normalized;
+
+        if (!MovementLocked)
+        {
+            moveInput = context.ReadValue<Vector2>().normalized;
+        }
     }
 
     private void Run(InputAction.CallbackContext context)
