@@ -14,45 +14,49 @@ public class PlayerMovement : MonoBehaviour
     private Player_InputActions _inputActions;
     private InputAction _moveAction;
     private InputAction _runAction;
+    private InputAction _interactAction;
     private Rigidbody2D rb;
     private bool _isMoving;
     private bool _isRunning;
+    private Interactable _selectedInteractable;
 
     private float CurrentMoveSpeed => _isRunning ? runSpeed : walkSpeed;
-    private bool MovementLocked => DialogueManager.GetInstance().isPlaying;
+
+
+    #region Unity Lifecycle
 
     private void Awake()
     {
         _inputActions = new Player_InputActions();
         _moveAction = _inputActions.Player.Move;
         _runAction = _inputActions.Player.Run;
+        _interactAction = _inputActions.Player.Interact;
         rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnEnable()
     {
-        _inputActions.Enable();
+        EnableInput();
         _moveAction.performed += Move;
         _moveAction.canceled += Move;
         _runAction.performed += Run;
         _runAction.canceled += Run;
+        _interactAction.performed += Interact;
     }
 
     private void OnDisable()
     {
-        _inputActions.Disable();
+        DisableInput();
         _moveAction.performed -= Move;
         _moveAction.canceled -= Move;
         _runAction.performed -= Run;
         _runAction.canceled -= Run;
+        _interactAction.performed -= Interact;
     }
 
     private void Update()
     {
-        if (!MovementLocked)
-        {
-            Animate();
-        }
+        Animate();
     }
 
     private void FixedUpdate()
@@ -60,34 +64,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, moveInput.y * CurrentMoveSpeed);
     }
 
-    private void Move(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            _isMoving = true;
-        }
-        if (context.canceled)
-        {
-            _isMoving = false;
-        }
-
-        if (!MovementLocked)
-        {
-            moveInput = context.ReadValue<Vector2>().normalized;
-        }
-    }
-
-    private void Run(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            _isRunning = true;
-        }
-        if (context.canceled)
-        {
-            _isRunning = false;
-        }
-    }
+    #endregion
 
     private void Animate()
     {
@@ -103,6 +80,94 @@ public class PlayerMovement : MonoBehaviour
                     animator.SetFloat(AnimatorStrings.directionY, moveInput.y);
                 }
             }
+        }
+    }
+
+    public void EnableInput()
+    {
+        _inputActions.Enable();
+    }
+    
+    public void DisableInput()
+    {
+        _inputActions.Disable();
+    }
+
+    #region Input Actions
+
+    private void Move(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            _isMoving = true;
+        }
+        if (context.canceled)
+        {
+            _isMoving = false;
+        }
+
+        moveInput = context.ReadValue<Vector2>().normalized;
+    }
+
+    private void Run(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            _isRunning = true;
+        }
+        if (context.canceled)
+        {
+            _isRunning = false;
+        }
+    }
+
+    private void Interact(InputAction.CallbackContext context)
+    {
+        if (_selectedInteractable != null)
+        {
+            _selectedInteractable.Interact();
+        }
+    }
+    
+    private void Continue(InputAction.CallbackContext context)
+    {
+        
+    }
+
+    #endregion
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        TrySelectInteractable(col);
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        TryDeselectInteractable(col);
+    }
+
+    private void TrySelectInteractable(Collider2D col)
+    {
+        Interactable interactable = col.GetComponent<Interactable>();
+        if (interactable == null) return;
+
+        if (_selectedInteractable != null)
+        {
+            _selectedInteractable.Deselect();
+        }
+        _selectedInteractable = interactable;
+        _selectedInteractable.Select();
+    }
+    
+    private void TryDeselectInteractable(Collider2D col)
+    {
+        Interactable interactable = col.GetComponent<Interactable>();
+        if (interactable == null) return;
+
+        if (interactable == _selectedInteractable)
+        {
+            _selectedInteractable.Deselect();
+            _selectedInteractable = null;
         }
     }
 }
