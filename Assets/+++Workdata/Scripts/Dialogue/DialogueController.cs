@@ -121,7 +121,7 @@ public class DialogueController : MonoBehaviour
         dialogueBox.DisplayText(line);
     }
 
-    private void OnDialogueContinued(DialogueBox _)
+    public void OnDialogueContinued(DialogueBox _)
     {
         ContinueDialogue();
     }
