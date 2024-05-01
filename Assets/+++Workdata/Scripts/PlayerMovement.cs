@@ -56,7 +56,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Animate();
+        if (_inputActions.Player.enabled)
+        {
+            Animate();
+        }
     }
 
     private void FixedUpdate()
@@ -127,11 +130,6 @@ public class PlayerMovement : MonoBehaviour
         {
             _selectedInteractable.Interact();
         }
-    }
-    
-    private void Continue(InputAction.CallbackContext context)
-    {
-        
     }
 
     #endregion

@@ -42,7 +42,6 @@ public class DialogueBox : MonoBehaviour
 
         continueButton.onClick.AddListener(() =>
         {
-            Debug.Log("Button clicked");
             DialogueContinued?.Invoke(this);
         });
     }
