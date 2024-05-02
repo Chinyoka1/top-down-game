@@ -10,7 +10,7 @@ public class TeleportBehaviour : MonoBehaviour
 
     private void Start()
     {
-        anim = GameObject.Find("DoorFadePanel").GetComponent<Animator>();
+        anim = GameObject.Find("SimpleFade").GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
