@@ -10,7 +10,11 @@ public class TeleportBehaviour : MonoBehaviour
 
     private void Start()
     {
-        anim = GameObject.Find("SimpleFade").GetComponent<Animator>();
+        // Simple Fade
+        //anim = GameObject.Find("SimpleFade").GetComponent<Animator>();
+        
+        // Circle Fade
+        anim = GameObject.Find("CircleFade").GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -23,10 +27,16 @@ public class TeleportBehaviour : MonoBehaviour
 
     IEnumerator InitiateTeleport(Collider2D other)
     {
-        anim.Play("black_panel_fade_in");
+        //anim.Play("black_panel_fade_in");
+        //yield return new WaitForSeconds(1);
+        //other.transform.position = spawnPos.position;
+        //yield return new WaitForSeconds(.5f);
+        //anim.Play("black_panel_fade_out");
+        
+        anim.Play("circle_fade_out");
         yield return new WaitForSeconds(1);
         other.transform.position = spawnPos.position;
         yield return new WaitForSeconds(.5f);
-        anim.Play("black_panel_fade_out");
+        anim.Play("circle_fade_in");
     }
 }
