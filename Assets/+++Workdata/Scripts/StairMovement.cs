@@ -6,8 +6,10 @@ using UnityEngine;
 public class StairMovement : MonoBehaviour
 {
     public enum StairDirection { Left, Right }
+    public enum MoveDirection { Up, Down }
 
-    public StairDirection direction = StairDirection.Right;
+    public StairDirection stairDirect = StairDirection.Right;
+    public MoveDirection moveDirection = MoveDirection.Up;
     public float speed = 4f;
 
     private bool isOnStairs;
@@ -32,7 +34,8 @@ public class StairMovement : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player.gameObject.GetComponent<PlayerMovement>().DisableInput();
-            yIntercept = player.position.y - (-0.75f * player.position.x);
+            //yIntercept = player.position.y - ((moveDirection == MoveDirection.Down ? -0.75f : 0.75f) * player.position.x);
+            yIntercept = player.position.y - ( -0.75f * player.position.x);
             isOnStairs = true;
             UpdatePlayerAnimators();
         }
@@ -51,7 +54,7 @@ public class StairMovement : MonoBehaviour
     {
         Vector3 newPosition = player.position;
 
-        float horizontalMovement = Time.deltaTime * speed * (direction == StairDirection.Right ? 1 : -1);
+        float horizontalMovement = Time.deltaTime * speed * (stairDirect == StairDirection.Right ? 1 : -1);
         newPosition.x += horizontalMovement;
         newPosition.y = CalculateYPosition(newPosition.x);
         player.position = newPosition;
@@ -59,6 +62,7 @@ public class StairMovement : MonoBehaviour
 
     private float CalculateYPosition(float x)
     {
+        //return (moveDirection == MoveDirection.Down ? -0.75f : 0.75f) * x + yIntercept; // Funktion f(x) = -0.75x + 1.75
         return -0.75f * x + yIntercept; // Funktion f(x) = -0.75x + 1.75
     }
 
@@ -69,7 +73,7 @@ public class StairMovement : MonoBehaviour
         {
             if (anim.gameObject.activeInHierarchy)
             {
-                anim.SetFloat(AnimatorStrings.directionX, direction == StairDirection.Right ? 1 : -1);
+                anim.SetFloat(AnimatorStrings.directionX, stairDirect == StairDirection.Right ? 1 : -1);
             }
         }
     }

@@ -4,7 +4,9 @@ using UnityEngine;
 public class StairRailingTrigger : MonoBehaviour
 {
     public GameObject maskContainer;
-    public Collider2D railingCollider;
+    public GameObject stairMoveCollider;
+    public GameObject teleportTriggger;
+    public Collider2D colliderToHide;
 
     private void OnEnable()
     {
@@ -23,6 +25,8 @@ public class StairRailingTrigger : MonoBehaviour
     private void ControlStairStatus(bool isBelowTrigger)
     {
         maskContainer.SetActive(!isBelowTrigger);
-        railingCollider.enabled = isBelowTrigger;
+        colliderToHide.enabled = isBelowTrigger;
+        stairMoveCollider.SetActive(!isBelowTrigger);
+        teleportTriggger.SetActive(!isBelowTrigger);
     }
 }
