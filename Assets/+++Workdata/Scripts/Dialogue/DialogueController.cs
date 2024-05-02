@@ -32,17 +32,21 @@ public class DialogueController : MonoBehaviour
     #endregion
 
     private Story inkStory;
-
+    private GameState gameState;
+    
     #region Unity Event Functions
 
     private void Awake()
     {
+        gameState = FindObjectOfType<GameState>();
         // Initialize Ink.
         inkStory = new Story(inkAsset.text);
         // Add error handling.
         inkStory.onError += OnInkError;
         // Connect an ink function to a C# function.
         inkStory.BindExternalFunction<string>("Event", Event);
+        inkStory.BindExternalFunction<string>("Get_State", Get_State, true);
+        inkStory.BindExternalFunction<string, int>("Add_State", Add_State);
     }
 
     private void OnEnable()
@@ -121,7 +125,7 @@ public class DialogueController : MonoBehaviour
         dialogueBox.DisplayText(line);
     }
 
-    public void OnDialogueContinued(DialogueBox _)
+    private void OnDialogueContinued(DialogueBox _)
     {
         ContinueDialogue();
     }
@@ -209,6 +213,17 @@ public class DialogueController : MonoBehaviour
     private void Event(string eventName)
     {
         InkEvent?.Invoke(eventName);
+    }
+
+    private object Get_State(string id)
+    {
+        State state = gameState.Get(id);
+        return state != null ? state.amount : 0;
+    }
+
+    private void Add_State(string id, int amount)
+    {
+        gameState.Add(id, amount);
     }
 
     #endregion

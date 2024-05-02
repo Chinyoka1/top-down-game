@@ -10,7 +10,11 @@ public class StairRailingTrigger : MonoBehaviour
 
     private void OnEnable()
     {
-        // Check Player position when entering the scene
+        OnEnterRoom();
+    }
+
+    public void OnEnterRoom()
+    {
         ControlStairStatus(GameObject.Find("Player").transform.position.y < transform.position.y);
     }
 
