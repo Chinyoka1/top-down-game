@@ -7,6 +7,7 @@ public class StairRailingTrigger : MonoBehaviour
     public GameObject stairMoveCollider;
     public GameObject teleportTriggger;
     public Collider2D colliderToHide;
+    public bool triggerIsFront = true;
 
     private void OnEnable()
     {
@@ -28,9 +29,19 @@ public class StairRailingTrigger : MonoBehaviour
 
     private void ControlStairStatus(bool isBelowTrigger)
     {
-        maskContainer.SetActive(!isBelowTrigger);
-        colliderToHide.enabled = isBelowTrigger;
-        stairMoveCollider.SetActive(!isBelowTrigger);
-        teleportTriggger.SetActive(!isBelowTrigger);
+        if (triggerIsFront)
+        {
+            maskContainer.SetActive(!isBelowTrigger);
+            colliderToHide.enabled = isBelowTrigger;
+            stairMoveCollider.SetActive(!isBelowTrigger);
+            teleportTriggger.SetActive(!isBelowTrigger);
+        }
+        else
+        {
+            maskContainer.SetActive(isBelowTrigger);
+            colliderToHide.enabled = !isBelowTrigger;
+            stairMoveCollider.SetActive(isBelowTrigger);
+            teleportTriggger.SetActive(isBelowTrigger);
+        }
     }
 }
