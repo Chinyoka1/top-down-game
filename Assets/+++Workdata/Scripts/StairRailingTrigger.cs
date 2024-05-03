@@ -32,16 +32,16 @@ public class StairRailingTrigger : MonoBehaviour
         if (triggerIsFront)
         {
             maskContainer.SetActive(!isBelowTrigger);
-            colliderToHide.enabled = isBelowTrigger;
             stairMoveCollider.SetActive(!isBelowTrigger);
             teleportTriggger.SetActive(!isBelowTrigger);
+            colliderToHide.enabled = isBelowTrigger;
         }
         else
         {
             maskContainer.SetActive(isBelowTrigger);
-            colliderToHide.enabled = !isBelowTrigger;
             stairMoveCollider.SetActive(isBelowTrigger);
             teleportTriggger.SetActive(isBelowTrigger);
+            colliderToHide.enabled = !isBelowTrigger;
         }
     }
 }

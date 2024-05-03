@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -147,7 +147,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: autumn 48x32_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: -12}
+        - {x: -12, y: -11}
+        - {x: -14, y: -6}
+        - {x: -8, y: -2}
+        - {x: -3, y: -1}
+        - {x: 3, y: -1}
+        - {x: 9, y: -2}
+        - {x: 11, y: -7}
+        - {x: 9, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d168075a8e28fd46b13e986ab97a9cc
+      internalID: -384969819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: autumn 48x32_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -15, y: -14}
+        - {x: -21, y: -9}
+        - {x: 13, y: 0}
+        - {x: 18, y: -6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952c4d6e8fd4454469a974a982c7b422
+      internalID: -466034645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: autumn 48x32_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: -11}
+        - {x: -6, y: -13}
+        - {x: -22, y: -13}
+        - {x: -22, y: -11}
+        - {x: -6, y: -10}
+        - {x: 8, y: -9}
+        - {x: 20, y: -5}
+        - {x: 21, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e676d83bd39cd2849bc367bbb5221431
+      internalID: -971427899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,7 +242,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      autumn 48x32_0: -384969819
+      autumn 48x32_1: -466034645
+      autumn 48x32_2: -971427899
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
