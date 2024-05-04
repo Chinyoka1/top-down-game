@@ -1,12 +1,13 @@
+#nullable enable
 using System;
 using UnityEngine;
 
 public class StairRailingTrigger : MonoBehaviour
 {
     public GameObject maskContainer;
-    public GameObject stairMoveCollider;
-    public GameObject teleportTriggger;
-    public Collider2D colliderToHide;
+    public GameObject? stairMoveCollider;
+    public GameObject? teleportTriggger;
+    public Collider2D? colliderToHide;
     public bool triggerIsFront = true;
 
     private void OnEnable()
@@ -16,6 +17,7 @@ public class StairRailingTrigger : MonoBehaviour
 
     public void OnEnterRoom()
     {
+        if (stairMoveCollider != null) stairMoveCollider.SetActive(false);
         ControlStairStatus(GameObject.Find("Player").transform.position.y < transform.position.y);
     }
 
@@ -32,16 +34,13 @@ public class StairRailingTrigger : MonoBehaviour
         if (triggerIsFront)
         {
             maskContainer.SetActive(!isBelowTrigger);
-            stairMoveCollider.SetActive(!isBelowTrigger);
-            teleportTriggger.SetActive(!isBelowTrigger);
-            colliderToHide.enabled = isBelowTrigger;
+            if (stairMoveCollider != null) stairMoveCollider.SetActive(!isBelowTrigger);
+            if (teleportTriggger != null) teleportTriggger.SetActive(!isBelowTrigger);
+            if (colliderToHide != null) colliderToHide.enabled = isBelowTrigger;
         }
         else
         {
             maskContainer.SetActive(isBelowTrigger);
-            stairMoveCollider.SetActive(isBelowTrigger);
-            teleportTriggger.SetActive(isBelowTrigger);
-            colliderToHide.enabled = !isBelowTrigger;
         }
     }
 }

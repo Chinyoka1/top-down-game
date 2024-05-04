@@ -6,26 +6,44 @@ using UnityEngine;
 public class StairMovement : MonoBehaviour
 {
     public enum StairDirection { Left, Right }
-    public enum MoveDirection { Up, Down }
+    public enum StairMoveDirection { Up, Down }
 
     public StairDirection stairDirect = StairDirection.Right;
-    public MoveDirection moveDirection = MoveDirection.Up;
+    public StairMoveDirection moveDirection = StairMoveDirection.Up;
     public float speed = 4f;
+    public bool autoMove;
+    public float stairSlope = 0.9f;
 
+    [SerializeField]
     private bool isOnStairs;
     private Transform player;
     private float yIntercept;
+    private PlayerMovement playerMovement;
 
     private void Awake()
     {
         player = FindObjectOfType<PlayerMovement>().gameObject.transform;
+        playerMovement = player.gameObject.GetComponent<PlayerMovement>();
+        if ((stairDirect == StairDirection.Right && moveDirection == StairMoveDirection.Up) ||
+            (stairDirect == StairDirection.Left && moveDirection == StairMoveDirection.Down))
+        {
+            stairSlope *= -1;
+        }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (isOnStairs)
+        if (autoMove)
         {
-            MovePlayer();
+            if (isOnStairs)
+            {
+                MovePlayer();
+            }
+        }
+        else
+        {
+            playerMovement.isOnStairs = isOnStairs;
+            playerMovement.stairSlope = stairSlope;
         }
     }
 
@@ -33,11 +51,17 @@ public class StairMovement : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            player.gameObject.GetComponent<PlayerMovement>().DisableInput();
-            //yIntercept = player.position.y - ((moveDirection == MoveDirection.Down ? -0.75f : 0.75f) * player.position.x);
-            yIntercept = player.position.y - ( -0.75f * player.position.x);
             isOnStairs = true;
-            UpdatePlayerAnimators();
+            if (autoMove)
+            {
+                player.gameObject.GetComponent<PlayerMovement>().DisableInput();
+                yIntercept = player.position.y - ( -stairSlope * player.position.x);
+                UpdatePlayerAnimators();
+            }
+            else
+            {
+                playerMovement.isOnStairs = true;
+            }
         }
     }
 
@@ -45,8 +69,15 @@ public class StairMovement : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            player.gameObject.GetComponent<PlayerMovement>().EnableInput();
             isOnStairs = false;
+            if (autoMove)
+            {
+                playerMovement.EnableInput();
+            }
+            else
+            {
+                playerMovement.isOnStairs = false;
+            }
         }
     }
 
@@ -62,14 +93,12 @@ public class StairMovement : MonoBehaviour
 
     private float CalculateYPosition(float x)
     {
-        //return (moveDirection == MoveDirection.Down ? -0.75f : 0.75f) * x + yIntercept; // Funktion f(x) = -0.75x + 1.75
-        return -0.75f * x + yIntercept; // Funktion f(x) = -0.75x + 1.75
+        return -stairSlope * x + yIntercept; // Funktion f(x) = -0.75x + 1.75
     }
 
     private void UpdatePlayerAnimators()
     {
-        List<Animator> playerAnimators = player.gameObject.GetComponent<PlayerMovement>().animators;
-        foreach (Animator anim in playerAnimators)
+        foreach (Animator anim in playerMovement.animators)
         {
             if (anim.gameObject.activeInHierarchy)
             {

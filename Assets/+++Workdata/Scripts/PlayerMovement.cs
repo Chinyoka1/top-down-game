@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed = 4f;
     public float runSpeed = 7f;
     public List<Animator> animators;
+    
+    public bool isOnStairs;
+    public float stairSlope;
 
     private Player_InputActions _inputActions;
     private InputAction _moveAction;
@@ -56,6 +59,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (isOnStairs)
+        {
+            rb.velocity = new Vector2(
+                moveInput.x * CurrentMoveSpeed, 
+                (moveInput.y - moveInput.x * stairSlope) * CurrentMoveSpeed
+            );
+        }
+        else
+        {
+            rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, moveInput.y * CurrentMoveSpeed);
+        }
         if (_inputActions.Player.enabled)
         {
             Animate();
@@ -64,7 +78,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, moveInput.y * CurrentMoveSpeed);
+        
+        
     }
 
     #endregion
