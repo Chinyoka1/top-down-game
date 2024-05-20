@@ -1,6 +1,10 @@
 -> farm_little_girl
 === farm_little_girl ===
 
+= talk
+{has_accepted_help: ->quest_unlocked}
+{not has_accepted_help: ->before_quest}
+
 = before_quest
 My big sister promised to play hide and seek in the forest with me today.
 But all she thinks about is work!
