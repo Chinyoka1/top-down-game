@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed = 4f;
     public float runSpeed = 7f;
     public List<Animator> animators;
+    public float accelerationTime = 0.075f;
     
     public bool isOnStairs;
     public float stairSlope;
@@ -22,11 +23,12 @@ public class PlayerMovement : MonoBehaviour
     private bool _isMoving;
     private bool _isRunning;
     private Interactable _selectedInteractable;
+    private Vector2 _currentVelocity;
 
     private float CurrentMoveSpeed => _isRunning ? runSpeed : walkSpeed;
 
 
-    #region Unity Lifecycle
+    #region Component Lifecycle
 
     private void Awake()
     {
@@ -57,32 +59,29 @@ public class PlayerMovement : MonoBehaviour
         _interactAction.performed -= Interact;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (isOnStairs)
+        Vector2 targetVelocity = moveInput * CurrentMoveSpeed;
+        // add the stair slope to the players velocity when they are on a stair
+        if (isOnStairs && moveInput.magnitude > 0)
         {
-            rb.velocity = new Vector2(
+            targetVelocity = new Vector2(
                 moveInput.x * CurrentMoveSpeed, 
                 (moveInput.y - moveInput.x * stairSlope) * CurrentMoveSpeed
             );
         }
-        else
-        {
-            rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, moveInput.y * CurrentMoveSpeed);
-        }
+        // set player velocity with acceleration
+        rb.velocity = Vector2.SmoothDamp(rb.velocity, targetVelocity, ref _currentVelocity, accelerationTime);
+        
         if (_inputActions.Player.enabled)
         {
             Animate();
         }
     }
 
-    private void FixedUpdate()
-    {
-        
-        
-    }
-
     #endregion
+
+    #region Animation
 
     private void Animate()
     {
@@ -101,6 +100,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    #endregion
+
+    #region Input Actions
+    
     public void EnableInput()
     {
         _inputActions.Enable();
@@ -110,8 +113,6 @@ public class PlayerMovement : MonoBehaviour
     {
         _inputActions.Disable();
     }
-
-    #region Input Actions
 
     private void Move(InputAction.CallbackContext context)
     {
@@ -149,6 +150,8 @@ public class PlayerMovement : MonoBehaviour
 
     #endregion
 
+    #region Interactions
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         TrySelectInteractable(col);
@@ -183,4 +186,6 @@ public class PlayerMovement : MonoBehaviour
             _selectedInteractable = null;
         }
     }
+
+    #endregion
 }
