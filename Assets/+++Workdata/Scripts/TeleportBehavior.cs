@@ -7,14 +7,38 @@ public class TeleportBehaviour : MonoBehaviour
 {
     public Transform spawnPos;
     public Animator anim;
+    public enum FadeType {Simple, Circle, Bramble}
+    public FadeType fadeType = FadeType.Simple;
+
+    private string fadeInAnimation;
+    private string fadeOutAnimation;
 
     private void Start()
     {
-        // Simple Fade
-        //anim = GameObject.Find("SimpleFade").GetComponent<Animator>();
-        
-        // Circle Fade
-        anim = GameObject.Find("CircleFade").GetComponent<Animator>();
+        switch (fadeType)
+        {
+            case FadeType.Simple:
+            {
+                anim = GameObject.Find("SimpleFade").GetComponent<Animator>();
+                fadeInAnimation = "black_panel_fade_out";
+                fadeOutAnimation = "black_panel_fade_in";
+                break;
+            }
+            case FadeType.Circle:
+            {
+                anim = GameObject.Find("CircleFade").GetComponent<Animator>();
+                fadeInAnimation = "circle_fade_in";
+                fadeOutAnimation = "circle_fade_out";
+                break;
+            }
+            case FadeType.Bramble:
+            {
+                anim = GameObject.Find("BrambleFade").GetComponent<Animator>();
+                fadeInAnimation = "bramble_fade_in";
+                fadeOutAnimation = "bramble_fade_out";
+                break;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -27,16 +51,10 @@ public class TeleportBehaviour : MonoBehaviour
 
     IEnumerator InitiateTeleport(Collider2D other)
     {
-        //anim.Play("black_panel_fade_in");
-        //yield return new WaitForSeconds(1);
-        //other.transform.position = spawnPos.position;
-        //yield return new WaitForSeconds(.5f);
-        //anim.Play("black_panel_fade_out");
-        
-        anim.Play("circle_fade_out");
+        anim.Play(fadeOutAnimation);
         yield return new WaitForSeconds(1);
         other.transform.position = spawnPos.position;
         yield return new WaitForSeconds(.5f);
-        anim.Play("circle_fade_in");
+        anim.Play(fadeInAnimation);
     }
 }
