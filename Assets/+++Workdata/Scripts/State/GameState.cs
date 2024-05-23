@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameState : MonoBehaviour
@@ -21,7 +23,7 @@ public class GameState : MonoBehaviour
                 return state;
             }
         }
-
+        
         return null;
     }
 
@@ -51,16 +53,42 @@ public class GameState : MonoBehaviour
             state.amount += amount;
         }
 
+
+        
         if (invokeEvent)
         {
             StateChanged?.Invoke();
         }
+
+        StartCoroutine(CheckItems());
     }
+    
+    private bool isCoroutineRunning = false;
+    IEnumerator CheckItems()
+    {
+        if (isCoroutineRunning)
+        {
+            yield break; // Coroutine abbrechen, wenn sie bereits läuft
+        }
+        isCoroutineRunning = true;
+        yield return new WaitForEndOfFrame();
+        for (int i = 0; i < states.Count; i++)
+        {
+            if (states[i].amount == 0)
+            {
+                states.RemoveAt(i);
+                i--;
+            }
+        }
+        isCoroutineRunning = false;
+    }
+
 
     public void Add(State state, bool invokeEvent = true)
     {
         Add(state.id, state.amount, invokeEvent);
     }
+
 
     public void Add(List<State> states)
     {
@@ -72,4 +100,33 @@ public class GameState : MonoBehaviour
     }
     
     //#todo Check Conditions 
+    
+    /// <summary>
+    /// Check <paramref name="conditions"/> against the game <see cref="states"/>. All conditions are implicitly AND connected.
+    /// A condition passes if the value of the <see cref="State"/> in the game <see cref="states"/> is equal or higher than the value of the condition.
+    /// </summary>
+    /// <param name="conditions">List of conditions to check.</param>
+    /// <returns>If all <paramref name="conditions"/> passed.</returns>
+    public bool CheckConditions(List<State> conditions)
+    {
+        // Check each condition in the list of conditions.
+        foreach (State condition in conditions)
+        {
+            // Get the state with the same id as the condition.
+            State state = Get(condition.id);
+            // Extract the value if the state exists; otherwise 0.
+            int stateAmount = state != null ? state.amount : 0;
+            // Compare the value of the state against the value of the condition.
+            if (stateAmount < condition.amount)
+            {
+                // Return immediately false if any condition fails.
+                // We do not need to check any conditions after that (Short-circuit).
+                return false;
+            }
+        }
+
+        // If we passed through the loop without ever returning false,
+        // we reach the end of the function and can confidently return true.
+        return true;
+    }
 }
