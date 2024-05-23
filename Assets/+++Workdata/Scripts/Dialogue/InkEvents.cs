@@ -38,7 +38,6 @@ public class InkEvents : MonoBehaviour
     {
         foreach (InkEvent inkEvent in inkEvents)
         {
-            print("irgandwas");
             if (inkEvent.name == eventName)
             {
                 inkEvent.onEvent.Invoke();
