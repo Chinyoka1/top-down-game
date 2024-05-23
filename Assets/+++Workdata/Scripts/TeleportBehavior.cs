@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TeleportBehaviour : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class TeleportBehaviour : MonoBehaviour
     public Animator anim;
     public enum FadeType {Simple, Circle, Bramble}
     public FadeType fadeType = FadeType.Simple;
+    public bool changeScene;
+    public string sceneName;
 
     private string fadeInAnimation;
     private string fadeOutAnimation;
@@ -53,7 +56,14 @@ public class TeleportBehaviour : MonoBehaviour
     {
         anim.Play(fadeOutAnimation);
         yield return new WaitForSeconds(1);
-        other.transform.position = spawnPos.position;
+        if (changeScene)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+        else
+        {
+            other.transform.position = spawnPos.position;
+        }
         yield return new WaitForSeconds(.5f);
         anim.Play(fadeInAnimation);
     }

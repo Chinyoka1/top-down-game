@@ -4,9 +4,9 @@
 = before_city
 Oh hey there!
 Are you also heading to the city?
-* [Yes!]
++ [Yes!]
 -> heading_to_city
-* [Not right now. Not a big city person.]
++ [Not right now. Not a big city person.]
 -> not_heading_to_city
 
 = heading_to_city
