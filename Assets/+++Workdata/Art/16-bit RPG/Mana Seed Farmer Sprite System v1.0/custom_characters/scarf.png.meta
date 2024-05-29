@@ -106,6 +106,58 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2969,8 +3021,8 @@ TextureImporter:
       name: scarf_136
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
+        x: 512
+        y: 448
         width: 64
         height: 64
       alignment: 9
@@ -2990,8 +3042,8 @@ TextureImporter:
       name: scarf_137
       rect:
         serializedVersion: 2
-        x: 64
-        y: 384
+        x: 576
+        y: 448
         width: 64
         height: 64
       alignment: 9
@@ -3011,8 +3063,8 @@ TextureImporter:
       name: scarf_138
       rect:
         serializedVersion: 2
-        x: 128
-        y: 384
+        x: 640
+        y: 448
         width: 64
         height: 64
       alignment: 9
@@ -3032,8 +3084,8 @@ TextureImporter:
       name: scarf_139
       rect:
         serializedVersion: 2
-        x: 192
-        y: 384
+        x: 704
+        y: 448
         width: 64
         height: 64
       alignment: 9
@@ -3053,8 +3105,8 @@ TextureImporter:
       name: scarf_140
       rect:
         serializedVersion: 2
-        x: 256
-        y: 384
+        x: 768
+        y: 448
         width: 64
         height: 64
       alignment: 9
@@ -3074,8 +3126,8 @@ TextureImporter:
       name: scarf_141
       rect:
         serializedVersion: 2
-        x: 320
-        y: 384
+        x: 832
+        y: 448
         width: 64
         height: 64
       alignment: 9
@@ -3095,8 +3147,8 @@ TextureImporter:
       name: scarf_142
       rect:
         serializedVersion: 2
-        x: 384
-        y: 384
+        x: 896
+        y: 448
         width: 64
         height: 64
       alignment: 9
@@ -3116,8 +3168,8 @@ TextureImporter:
       name: scarf_143
       rect:
         serializedVersion: 2
-        x: 448
-        y: 384
+        x: 960
+        y: 448
         width: 64
         height: 64
       alignment: 9
@@ -3138,7 +3190,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3159,7 +3211,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3180,7 +3232,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3201,7 +3253,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3222,7 +3274,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3243,7 +3295,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3264,7 +3316,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3285,7 +3337,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3305,8 +3357,8 @@ TextureImporter:
       name: scarf_152
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
+        x: 512
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3326,8 +3378,8 @@ TextureImporter:
       name: scarf_153
       rect:
         serializedVersion: 2
-        x: 64
-        y: 256
+        x: 576
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3347,8 +3399,8 @@ TextureImporter:
       name: scarf_154
       rect:
         serializedVersion: 2
-        x: 128
-        y: 256
+        x: 640
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3368,8 +3420,8 @@ TextureImporter:
       name: scarf_155
       rect:
         serializedVersion: 2
-        x: 192
-        y: 256
+        x: 704
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3389,8 +3441,8 @@ TextureImporter:
       name: scarf_156
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
+        x: 768
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3410,8 +3462,8 @@ TextureImporter:
       name: scarf_157
       rect:
         serializedVersion: 2
-        x: 320
-        y: 256
+        x: 832
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3431,8 +3483,8 @@ TextureImporter:
       name: scarf_158
       rect:
         serializedVersion: 2
-        x: 384
-        y: 256
+        x: 896
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3452,8 +3504,8 @@ TextureImporter:
       name: scarf_159
       rect:
         serializedVersion: 2
-        x: 448
-        y: 256
+        x: 960
+        y: 384
         width: 64
         height: 64
       alignment: 9
@@ -3474,7 +3526,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3495,7 +3547,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 192
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3516,7 +3568,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 192
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3537,7 +3589,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 192
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3557,8 +3609,8 @@ TextureImporter:
       name: scarf_164
       rect:
         serializedVersion: 2
-        x: 320
-        y: 192
+        x: 256
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3578,8 +3630,8 @@ TextureImporter:
       name: scarf_165
       rect:
         serializedVersion: 2
-        x: 384
-        y: 192
+        x: 320
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3599,8 +3651,8 @@ TextureImporter:
       name: scarf_166
       rect:
         serializedVersion: 2
-        x: 448
-        y: 192
+        x: 384
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3620,8 +3672,8 @@ TextureImporter:
       name: scarf_167
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 448
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3641,8 +3693,8 @@ TextureImporter:
       name: scarf_168
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 512
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3662,8 +3714,8 @@ TextureImporter:
       name: scarf_169
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
+        x: 576
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3683,8 +3735,8 @@ TextureImporter:
       name: scarf_170
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
+        x: 640
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3704,8 +3756,8 @@ TextureImporter:
       name: scarf_171
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
+        x: 704
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3725,8 +3777,8 @@ TextureImporter:
       name: scarf_172
       rect:
         serializedVersion: 2
-        x: 320
-        y: 128
+        x: 768
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3746,8 +3798,8 @@ TextureImporter:
       name: scarf_173
       rect:
         serializedVersion: 2
-        x: 384
-        y: 128
+        x: 832
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3767,8 +3819,8 @@ TextureImporter:
       name: scarf_174
       rect:
         serializedVersion: 2
-        x: 448
-        y: 128
+        x: 896
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3788,8 +3840,8 @@ TextureImporter:
       name: scarf_175
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 960
+        y: 320
         width: 64
         height: 64
       alignment: 9
@@ -3809,8 +3861,8 @@ TextureImporter:
       name: scarf_176
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 0
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -3830,8 +3882,8 @@ TextureImporter:
       name: scarf_177
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
+        x: 64
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -3851,8 +3903,8 @@ TextureImporter:
       name: scarf_178
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
+        x: 128
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -3872,8 +3924,8 @@ TextureImporter:
       name: scarf_179
       rect:
         serializedVersion: 2
-        x: 256
-        y: 64
+        x: 192
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -3893,8 +3945,8 @@ TextureImporter:
       name: scarf_180
       rect:
         serializedVersion: 2
-        x: 320
-        y: 64
+        x: 256
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -3914,8 +3966,8 @@ TextureImporter:
       name: scarf_181
       rect:
         serializedVersion: 2
-        x: 384
-        y: 64
+        x: 320
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -3935,8 +3987,8 @@ TextureImporter:
       name: scarf_182
       rect:
         serializedVersion: 2
-        x: 448
-        y: 64
+        x: 384
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -3956,8 +4008,8 @@ TextureImporter:
       name: scarf_183
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 448
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -3977,8 +4029,8 @@ TextureImporter:
       name: scarf_184
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 512
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -3998,8 +4050,8 @@ TextureImporter:
       name: scarf_185
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 576
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -4019,8 +4071,8 @@ TextureImporter:
       name: scarf_186
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
+        x: 640
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -4040,8 +4092,8 @@ TextureImporter:
       name: scarf_187
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
+        x: 704
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -4061,8 +4113,8 @@ TextureImporter:
       name: scarf_188
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
+        x: 768
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -4082,8 +4134,8 @@ TextureImporter:
       name: scarf_189
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
+        x: 832
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -4103,8 +4155,8 @@ TextureImporter:
       name: scarf_190
       rect:
         serializedVersion: 2
-        x: 448
-        y: 0
+        x: 896
+        y: 256
         width: 64
         height: 64
       alignment: 9
@@ -4116,6 +4168,1371 @@ TextureImporter:
       bones: []
       spriteID: cedc560f0fdb7f84c9ed44cadf84564e
       internalID: 657398781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_191
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fcd4839a8e1b646b9d166b2fa94e46
+      internalID: -153547492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_192
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f0a9b1de3996c418d9029c16afda70
+      internalID: 800569662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_193
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2517aac2a034f48a14a134460da73a
+      internalID: -1428070822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_194
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c81d4964967a8439dbac6a34d89304
+      internalID: -143067525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_195
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b3bc071c0c19045a648efbf736686b
+      internalID: 649936939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_196
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cab411e26f34234f8623b24c99267af
+      internalID: 1499488245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_197
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b28754e591b054981b56cb5d1f8eef
+      internalID: -269873483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_198
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3ffcc5800f0904b8c99d1c1110d323
+      internalID: -1221515625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_199
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0170c3fe57de74e8c808a3dcdf5d73
+      internalID: 1993405791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_200
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c768e1123d9b2844aca75efd3525b56
+      internalID: 2092125398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_201
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d978593cfc72eb40abe465751f44594
+      internalID: 892370496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_202
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e789fc32d849ab4fbf73a30d5fbf448
+      internalID: -1233649708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_203
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd29d827c771c6419be687b7922f53a
+      internalID: -394908271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_204
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed3116a224ef1747bad27856b1b146e
+      internalID: -1190572048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_205
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29079c89055a8bd42a5684cdf4e53b00
+      internalID: 335845215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_206
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929e10e2a6ad9e64c8bba293916ab29c
+      internalID: 259906410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_207
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158565bffb2506c4fa0b9c2574d1f9f2
+      internalID: 665956054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80180210b2dd5644ac65b2ee8c67139
+      internalID: 517040822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_209
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7598c5e8f2084464ba276951e9ed6728
+      internalID: 371565005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_210
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1213b5b4a0d4fc44a82d3cdb2db1066e
+      internalID: 736562031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_211
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f83df1a871b124391131b2cc425f1d
+      internalID: -1170973852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_212
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a8bb3fa5787064190f0c276bbc986b
+      internalID: 2015063877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_213
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d1f741c53bce74f9becec5ef2fec00
+      internalID: 353893985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_214
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1057d167782f5d240991befa1550ecf0
+      internalID: 632339643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_215
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f07391a3cd1db49a26e41b0da58944
+      internalID: -716129561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_216
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d6210daf26f164080e3398d7879cd6
+      internalID: 1402487019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_217
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7041d7ea392d044fb9e8e116b9cd203
+      internalID: -1334128560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_218
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6600254edfc2b64692a91c6768b240c
+      internalID: -5496767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_219
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76241275de1cb8d48ba80add3c175697
+      internalID: -1370177939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_220
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2112ba617bfc84595116335a745d1e
+      internalID: 1848026142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_221
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb85220f0ca0e0540808a05167e016d3
+      internalID: -647604579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_222
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a13d475c7481814fac2e870bf37f20c
+      internalID: -1014925921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_223
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983dd4245384af74cb6d8d1ecb38b2c6
+      internalID: -1388449424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_224
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a0293a81ad13748a2692b36d511565
+      internalID: 278513309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_225
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e994f0ed5f0dee4428e03640bb6cf271
+      internalID: 150770026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_226
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b12b4c7cc3f3c4d912693790f9f51b
+      internalID: 1685156002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_227
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1975a319bef70fe489006e2d6f34a9fe
+      internalID: -1031764456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_228
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3e1105fec476740b81f91769105243
+      internalID: 1099792516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_229
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ea4b78df5136846b2b16680aa2939e
+      internalID: 1758959256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_230
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cae361018e86a428226f4d8181d978
+      internalID: -1681720014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_231
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081b2d6ed9cd383408ab48990e7f2fdb
+      internalID: 556960581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_232
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf29e827f31186b4980448b8fc75eebc
+      internalID: 699536826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_233
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6effbe2a849a6a0489f7aeae80ae4fb6
+      internalID: 976285366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_234
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c3118e2f9bb884b8080cd385b4dee9
+      internalID: 759729884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_235
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be68137450a12f545aaa3d0fac3d3c4d
+      internalID: 2134415697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_236
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5665d8ffc58aa418c8de47a156c68a
+      internalID: 759379382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_237
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c49c62b65cd03046ad8f640d2d0e0dd
+      internalID: 761572270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_238
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e73fa8ac30e3546a5fdbca5f7a4389
+      internalID: -516581668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_239
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0634d340493774b409e495518e5ddff2
+      internalID: 1168331020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_240
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007ab06a599d2994aaf7344191eff9fe
+      internalID: 1525914086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_241
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9394a52b154af4f95bd32bef3de383
+      internalID: -1648422472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_242
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62967ba1faff6c04f885f65743373603
+      internalID: 189837678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_243
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565259789bdc6a149ba6f764ea86a30f
+      internalID: -523545693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_244
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561d9c39be55006449ac530216dd5aff
+      internalID: -439811009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_245
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ede66c9bcc214e41a5c0131ce031d38
+      internalID: -1482846027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_246
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffdb622d66386d40839a80e81c5020f
+      internalID: -843466499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_247
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc3d0fb619e8d64d976466122c73f96
+      internalID: -762874254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_248
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd964510ed9722648838c7e9b033bef6
+      internalID: 1002255882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_249
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4040475b5e425244e8f59e225e3a8f9d
+      internalID: 1652446994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_250
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34c6b898580db94ab04c8d107eb097d
+      internalID: -1540790211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_251
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1891aa32d213f49b0901b8ac0edbbb
+      internalID: 1989065192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_252
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8cf80e8c82e6246873d931a8c93e75
+      internalID: -676119981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_253
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30f97edbb1469740a3af6f90e4cb395
+      internalID: 1347923215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_254
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2d01867f7a90f43845336fd9d992ea
+      internalID: -1600617292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarf_255
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092ccc43de615f4469aa93aabc9913ef
+      internalID: -85520888
       vertices: []
       indices: 
       edges: []
@@ -4234,13 +5651,78 @@ TextureImporter:
       scarf_189: 291130407
       scarf_19: -1182226155
       scarf_190: 657398781
+      scarf_191: -153547492
+      scarf_192: 800569662
+      scarf_193: -1428070822
+      scarf_194: -143067525
+      scarf_195: 649936939
+      scarf_196: 1499488245
+      scarf_197: -269873483
+      scarf_198: -1221515625
+      scarf_199: 1993405791
       scarf_2: -695604927
       scarf_20: 501026753
+      scarf_200: 2092125398
+      scarf_201: 892370496
+      scarf_202: -1233649708
+      scarf_203: -394908271
+      scarf_204: -1190572048
+      scarf_205: 335845215
+      scarf_206: 259906410
+      scarf_207: 665956054
+      scarf_208: 517040822
+      scarf_209: 371565005
       scarf_21: 2061224301
+      scarf_210: 736562031
+      scarf_211: -1170973852
+      scarf_212: 2015063877
+      scarf_213: 353893985
+      scarf_214: 632339643
+      scarf_215: -716129561
+      scarf_216: 1402487019
+      scarf_217: -1334128560
+      scarf_218: -5496767
+      scarf_219: -1370177939
       scarf_22: -47554359
+      scarf_220: 1848026142
+      scarf_221: -647604579
+      scarf_222: -1014925921
+      scarf_223: -1388449424
+      scarf_224: 278513309
+      scarf_225: 150770026
+      scarf_226: 1685156002
+      scarf_227: -1031764456
+      scarf_228: 1099792516
+      scarf_229: 1758959256
       scarf_23: 296313853
+      scarf_230: -1681720014
+      scarf_231: 556960581
+      scarf_232: 699536826
+      scarf_233: 976285366
+      scarf_234: 759729884
+      scarf_235: 2134415697
+      scarf_236: 759379382
+      scarf_237: 761572270
+      scarf_238: -516581668
+      scarf_239: 1168331020
       scarf_24: 559720692
+      scarf_240: 1525914086
+      scarf_241: -1648422472
+      scarf_242: 189837678
+      scarf_243: -523545693
+      scarf_244: -439811009
+      scarf_245: -1482846027
+      scarf_246: -843466499
+      scarf_247: -762874254
+      scarf_248: 1002255882
+      scarf_249: 1652446994
       scarf_25: -293554561
+      scarf_250: -1540790211
+      scarf_251: 1989065192
+      scarf_252: -676119981
+      scarf_253: 1347923215
+      scarf_254: -1600617292
+      scarf_255: -85520888
       scarf_26: 1046184246
       scarf_27: -1054125889
       scarf_28: 1737575929

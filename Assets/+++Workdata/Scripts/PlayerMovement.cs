@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 7f;
     public List<Animator> animators;
     public float accelerationTime = 0.075f;
-    
+
     public bool isOnStairs;
     public float stairSlope;
 
@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private InputAction _moveAction;
     private InputAction _runAction;
     private InputAction _interactAction;
+    private InputAction _attackAction;
     private Rigidbody2D rb;
     private bool _isMoving;
     private bool _isRunning;
@@ -36,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
         _moveAction = _inputActions.Player.Move;
         _runAction = _inputActions.Player.Run;
         _interactAction = _inputActions.Player.Interact;
+        _attackAction = _inputActions.Player.Attack;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -47,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         _runAction.performed += Run;
         _runAction.canceled += Run;
         _interactAction.performed += Interact;
+        _attackAction.performed += Attack;
     }
 
     private void OnDisable()
@@ -57,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
         _runAction.performed -= Run;
         _runAction.canceled -= Run;
         _interactAction.performed -= Interact;
+        _attackAction.performed -= Attack;
     }
 
     private void FixedUpdate()
@@ -66,13 +70,14 @@ public class PlayerMovement : MonoBehaviour
         if (isOnStairs && moveInput.magnitude > 0)
         {
             targetVelocity = new Vector2(
-                moveInput.x * CurrentMoveSpeed, 
+                moveInput.x * CurrentMoveSpeed,
                 (moveInput.y - moveInput.x * stairSlope) * CurrentMoveSpeed
             );
         }
+
         // set player velocity with acceleration
         rb.velocity = Vector2.SmoothDamp(rb.velocity, targetVelocity, ref _currentVelocity, accelerationTime);
-        
+
         if (_inputActions.Player.enabled)
         {
             Animate();
@@ -103,12 +108,12 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
     #region Input Actions
-    
+
     public void EnableInput()
     {
         _inputActions.Enable();
     }
-    
+
     public void DisableInput()
     {
         _inputActions.Disable();
@@ -120,6 +125,7 @@ public class PlayerMovement : MonoBehaviour
         {
             _isMoving = true;
         }
+
         if (context.canceled)
         {
             _isMoving = false;
@@ -134,6 +140,7 @@ public class PlayerMovement : MonoBehaviour
         {
             _isRunning = true;
         }
+
         if (context.canceled)
         {
             _isRunning = false;
@@ -145,6 +152,17 @@ public class PlayerMovement : MonoBehaviour
         if (_selectedInteractable != null)
         {
             _selectedInteractable.Interact();
+        }
+    }
+
+    private void Attack(InputAction.CallbackContext context)
+    {
+        foreach (Animator animator in animators)
+        {
+            if (animator.gameObject.activeInHierarchy)
+            {
+                animator.SetTrigger(AnimatorStrings.attack);
+            }
         }
     }
 
@@ -171,10 +189,11 @@ public class PlayerMovement : MonoBehaviour
         {
             _selectedInteractable.Deselect();
         }
+
         _selectedInteractable = interactable;
         _selectedInteractable.Select();
     }
-    
+
     private void TryDeselectInteractable(Collider2D col)
     {
         Interactable interactable = col.GetComponent<Interactable>();

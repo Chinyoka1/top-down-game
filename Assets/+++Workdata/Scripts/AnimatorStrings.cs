@@ -7,4 +7,5 @@ public class AnimatorStrings
     public static string lastMoveDirectionX = "lastMoveDirectionX";
     public static string lastMoveDirectionY = "lastMoveDirectionY";
     public static string hasTarget = "hasTarget";
+    public static string attack = "attack";
 }
