@@ -2,15 +2,11 @@
 === farm_little_girl ===
 
 = talk
-{has_accepted_help: ->quest_unlocked}
-{not has_accepted_help: ->before_quest}
-
-= before_quest
 My big sister promised to play hide and seek in the forest with me today.
 But all she thinks about is work!
 -> END
 
-= quest_unlocked
+= farm_girl_quest
 Is she finally done with the preparations? I've been waiting forever!
 Oh, you want to play with me? But my sister promised she would...
 * [I am VERY good at hiding.]
