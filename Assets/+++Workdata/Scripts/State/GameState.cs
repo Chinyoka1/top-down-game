@@ -7,6 +7,7 @@ using UnityEngine;
 public class GameState : MonoBehaviour
 {
     public static event Action StateChanged;
+    public static event Action<string, int> StateAdded;
 
     #region Inspector
 
@@ -52,12 +53,11 @@ public class GameState : MonoBehaviour
         {
             state.amount += amount;
         }
-
-
         
         if (invokeEvent)
         {
             StateChanged?.Invoke();
+            StateAdded?.Invoke(id, amount);
         }
 
         StartCoroutine(CheckItems());
@@ -95,6 +95,7 @@ public class GameState : MonoBehaviour
         foreach (State state in states)
         {
             Add(state, false);
+            StateAdded?.Invoke(state.id, state.amount);
         }
         StateChanged?.Invoke();
     }
