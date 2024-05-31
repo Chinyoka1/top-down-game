@@ -7,6 +7,7 @@ But all she thinks about is work!
 -> END
 
 = farm_girl_quest
+~ Add_State("quest_talk_to_little_sister", 1)
 Is she finally done with the preparations? I've been waiting forever!
 Oh, you want to play with me? But my sister promised she would...
 * [I am VERY good at hiding.]
@@ -21,7 +22,7 @@ Maybe you can even show me some new hiding spots.
 But just so you know, I know this forest better than anyone around here.
 Even better than my big sister.
 So be on your guard!
--> END
+-> quest_progress
 
 = quest_reply_work
 (Sigh) I know, and I understand that.
@@ -30,4 +31,8 @@ Without her, we would probably struggle to keep the farm running.
 But she should also think about having fun sometimes!
 What good is all that work when you never have time to play?
 Well, maybe another day. Let's go!
+-> quest_progress
+
+= quest_progress
+~ Event("Progress Farm Girl Quest")
 -> END

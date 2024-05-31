@@ -10,8 +10,6 @@ public class StateInfo
 
     public string name;
 
-    public int amount;
-
     public Sprite icon;
 
     public string description;

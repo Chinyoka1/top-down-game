@@ -12,6 +12,8 @@ public class GameState : MonoBehaviour
     #region Inspector
 
     [SerializeField] private List<State> states;
+    
+    public StateInfo[] stateInfos;
 
     #endregion
 

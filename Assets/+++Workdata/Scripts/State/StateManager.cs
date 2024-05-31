@@ -12,9 +12,8 @@ public class StateManager : MonoBehaviour
     public Image iconImage;
     public TextMeshProUGUI itemHeaderText;
     public TextMeshProUGUI itemDescriptionText;
-    
-    [SerializeField]
-    private StateInfo[] stateInfos;
+    public GameState gameState;
+    [SerializeField] private Button continueButton;
     
     private void OnEnable()
     {
@@ -30,14 +29,14 @@ public class StateManager : MonoBehaviour
     
     private void OnStateAdded(string id, int amount)
     {
-        foreach (StateInfo stateInfo in stateInfos)
+        foreach (StateInfo stateInfo in gameState.stateInfos)
         {
             if (stateInfo.id == id)
             {
-                ItemPanel.SetActive(true);
                 iconImage.sprite = stateInfo.icon;
                 itemHeaderText.text = stateInfo.name;
                 itemDescriptionText.text = stateInfo.description;
+                StartCoroutine(DelayStatePopup());
             }
         }
     }
@@ -46,5 +45,14 @@ public class StateManager : MonoBehaviour
     {
         EventSystem.current.SetSelectedGameObject(null);
         popup.gameObject.SetActive(false);
+    }
+
+    IEnumerator DelayStatePopup()
+    {
+        yield return null;
+        ItemPanel.SetActive(true);
+        Selectable newSelection = continueButton;
+        yield return null;
+        newSelection.Select();
     }
 }

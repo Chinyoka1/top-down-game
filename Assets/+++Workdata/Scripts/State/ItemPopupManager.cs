@@ -10,9 +10,7 @@ public class ItemPopupManager : MonoBehaviour
 {
     public Transform itemPopupsContainer;
     public GameObject popupPrefab;
-    
-    [SerializeField]
-    private StateInfo[] stateInfos;
+    public GameState gameState;
 
     private void Awake()
     {
@@ -31,16 +29,11 @@ public class ItemPopupManager : MonoBehaviour
     
     private void OnStateAdded(string id, int amount)
     {
-        foreach (StateInfo stateInfo in stateInfos)
+        foreach (StateInfo stateInfo in gameState.stateInfos)
         {
             if (stateInfo.id == id)
             {
-                GameObject itemPopup = Instantiate(popupPrefab, itemPopupsContainer);
-                TextMeshProUGUI itemText = itemPopup.transform.Find("Text").GetComponent<TextMeshProUGUI>();
-                Image iconImage = itemPopup.transform.Find("Icon").GetComponent<Image>();
-
-                itemText.text = "+" + stateInfo.amount + " " + stateInfo.name;
-                iconImage.sprite = stateInfo.icon;
+                StartCoroutine(CreateItemPopup(stateInfo, amount));
             }
         }
     }
@@ -51,5 +44,17 @@ public class ItemPopupManager : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+    }
+
+    IEnumerator CreateItemPopup(StateInfo stateInfo, int amount)
+    {
+        GameObject itemPopup = Instantiate(popupPrefab, itemPopupsContainer);
+        TextMeshProUGUI itemText = itemPopup.transform.Find("Text").GetComponent<TextMeshProUGUI>();
+        Image iconImage = itemPopup.transform.Find("Icon").GetComponent<Image>();
+
+        itemText.text = (amount > 0 ? "+" : "") + amount + " " + stateInfo.name;
+        iconImage.sprite = stateInfo.icon;
+        yield return new WaitForSeconds(2);
+        Destroy(itemPopup);
     }
 }

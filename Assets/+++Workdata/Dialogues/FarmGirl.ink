@@ -1,6 +1,3 @@
-VAR has_accepted_help = false
-VAR has_declined_help = false
-
 -> farm_girl
 === farm_girl ===
 
