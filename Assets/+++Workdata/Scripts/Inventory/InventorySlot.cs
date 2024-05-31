@@ -19,8 +19,8 @@ public class InventorySlot : MonoBehaviour
     
     public void Deactivate()
     {
-        itemImage.sprite = null;
-        itemAmount.text = "";
+        itemImage.gameObject.SetActive(false);
+        itemAmount.gameObject.SetActive(false);
         slotToggle.isOn = false;
     } 
 
@@ -28,5 +28,7 @@ public class InventorySlot : MonoBehaviour
     {
         itemImage.sprite = stateInfo.icon;
         itemAmount.text = stateInfo.amount.ToString();
+        itemImage.gameObject.SetActive(true);
+        itemAmount.gameObject.SetActive(true);
     }
 }

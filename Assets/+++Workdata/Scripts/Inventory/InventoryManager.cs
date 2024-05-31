@@ -3,26 +3,41 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
+    [SerializeField]private GameObject inventoryContainer;
     [SerializeField]private InventorySlot[] inventorySlots;
     [SerializeField]private GameState gameState;
+    [SerializeField]private PlayerMovement playerMovement;
+    private InputAction _inventoryAction;
 
     private void Awake()
     {
+        _inventoryAction = playerMovement._inputActions.Player.Inventory;
         RefreshInventory();
     }
 
-    public void RefreshInventory()
+    private void OnEnable()
+    {
+        _inventoryAction.performed += ToggleInventory;
+    }
+
+    private void OnDisable()
+    {
+        _inventoryAction.performed -= ToggleInventory;
+    }
+
+    private void RefreshInventory()
     {
         List<State> states = gameState.GetStates();
         for (int i = 0; i < inventorySlots.Length; i++)
         {
             if (i < states.Count)
             {
-                StateInfo stateInfo = gameState.GetStateInfo(i);
+                StateInfo stateInfo = gameState.GetStateInfo(states[i].id);
                 stateInfo.amount = states[i].amount;
                 
                 inventorySlots[i].SetStateInfo(stateInfo);
@@ -32,5 +47,11 @@ public class InventoryManager : MonoBehaviour
                 inventorySlots[i].Deactivate();
             }
         }
+    }
+
+    private void ToggleInventory(InputAction.CallbackContext context)
+    {
+        RefreshInventory();
+        inventoryContainer.SetActive(!inventoryContainer.activeInHierarchy);
     }
 }

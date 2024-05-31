@@ -48,13 +48,10 @@ public class ItemPopupManager : MonoBehaviour
 
     IEnumerator CreateItemPopup(StateInfo stateInfo, int amount)
     {
-        GameObject itemPopup = Instantiate(popupPrefab, itemPopupsContainer);
-        TextMeshProUGUI itemText = itemPopup.transform.Find("Text").GetComponent<TextMeshProUGUI>();
-        Image iconImage = itemPopup.transform.Find("Icon").GetComponent<Image>();
-
-        itemText.text = (amount > 0 ? "+" : "") + amount + " " + stateInfo.name;
-        iconImage.sprite = stateInfo.icon;
+        ItemPopup itemPopup = Instantiate(popupPrefab, itemPopupsContainer).GetComponent<ItemPopup>();
+        stateInfo.amount = amount;
+        itemPopup.SetStateInfo(stateInfo);
         yield return new WaitForSeconds(2);
-        Destroy(itemPopup);
+        Destroy(itemPopup.gameObject);
     }
 }

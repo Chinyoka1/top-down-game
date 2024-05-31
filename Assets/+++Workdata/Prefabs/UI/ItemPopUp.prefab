@@ -143,6 +143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5315121637176708691}
+  - component: {fileID: 1594924322388124472}
   m_Layer: 5
   m_Name: ItemPopup
   m_TagString: Untagged
@@ -171,6 +172,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1594924322388124472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260004287778107577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292c4e5b2005ea647a9e09e8dab6d57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemText: {fileID: 3548577114015631311}
+  iconImage: {fileID: 5570757923815859782}
 --- !u!1 &8376633475093110216
 GameObject:
   m_ObjectHideFlags: 0

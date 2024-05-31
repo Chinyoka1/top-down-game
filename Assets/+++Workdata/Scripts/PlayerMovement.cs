@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isOnStairs;
     public float stairSlope;
 
-    private Player_InputActions _inputActions;
+    public Player_InputActions _inputActions;
     private InputAction _moveAction;
     private InputAction _runAction;
     private InputAction _interactAction;

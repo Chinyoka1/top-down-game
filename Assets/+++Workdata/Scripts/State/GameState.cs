@@ -107,9 +107,14 @@ public class GameState : MonoBehaviour
         return states;
     }
     
-    public StateInfo GetStateInfo(int i)
+    public StateInfo GetStateInfo(string id)
     {
-        return stateInfos[i];
+        foreach (StateInfo stateInfo in stateInfos)
+        {
+            if (stateInfo.id == id) return stateInfo;
+        }
+
+        return new StateInfo();
     }
     
     //#todo Check Conditions 
