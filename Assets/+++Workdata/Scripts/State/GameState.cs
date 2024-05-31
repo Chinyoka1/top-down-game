@@ -101,6 +101,16 @@ public class GameState : MonoBehaviour
         }
         StateChanged?.Invoke();
     }
+
+    public List<State> GetStates()
+    {
+        return states;
+    }
+    
+    public StateInfo GetStateInfo(int i)
+    {
+        return stateInfos[i];
+    }
     
     //#todo Check Conditions 
     
