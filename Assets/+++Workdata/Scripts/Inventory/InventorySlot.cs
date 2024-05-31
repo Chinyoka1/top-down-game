@@ -22,7 +22,7 @@ public class InventorySlot : MonoBehaviour
         itemImage.sprite = null;
         itemAmount.text = "";
         slotToggle.isOn = false;
-    }
+    } 
 
     private void SetSlot()
     {
