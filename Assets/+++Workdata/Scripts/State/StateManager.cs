@@ -12,9 +12,6 @@ public class StateManager : MonoBehaviour
     public Image iconImage;
     public TextMeshProUGUI itemHeaderText;
     public TextMeshProUGUI itemDescriptionText;
-
-    public GameObject itemTextContainer;
-    public TextMeshProUGUI itemText;
     
     [SerializeField]
     private StateInfo[] stateInfos;
@@ -41,9 +38,6 @@ public class StateManager : MonoBehaviour
                 iconImage.sprite = stateInfo.icon;
                 itemHeaderText.text = stateInfo.name;
                 itemDescriptionText.text = stateInfo.description;
-
-                itemTextContainer.SetActive(true);
-                itemText.text = "+" + stateInfo.amount + " " + stateInfo.name;
             }
         }
     }
