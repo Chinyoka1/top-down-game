@@ -21,7 +21,7 @@ public class InputReader : ScriptableObject
         runAction = _inputActions.Player.Run;
         interactAction = _inputActions.Player.Interact;
         attackAction = _inputActions.Player.Attack;
-        inventoryAction = _inputActions.Player.Inventory;
+        inventoryAction = _inputActions.UI.Inventory;
     }
 
     public void Enable()
