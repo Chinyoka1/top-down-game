@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 public class InventorySlot : MonoBehaviour
 {
-    private StateInfo stateInfo;
+    private StateInfo _stateInfo;
     [SerializeField]private Image itemImage;
     [SerializeField]private TextMeshProUGUI itemAmount;
     [SerializeField]private Toggle slotToggle;
 
     public void SetStateInfo(StateInfo stateInfo)
     {
-        this.stateInfo = stateInfo;
+        _stateInfo = stateInfo;
         SetSlot();
     }
     
@@ -26,8 +26,8 @@ public class InventorySlot : MonoBehaviour
 
     private void SetSlot()
     {
-        itemImage.sprite = stateInfo.icon;
-        itemAmount.text = stateInfo.amount.ToString();
+        itemImage.sprite = _stateInfo.icon;
+        itemAmount.text = _stateInfo.amount.ToString();
         itemImage.gameObject.SetActive(true);
         itemAmount.gameObject.SetActive(true);
     }

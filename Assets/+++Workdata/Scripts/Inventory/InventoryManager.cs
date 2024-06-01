@@ -11,23 +11,21 @@ public class InventoryManager : MonoBehaviour
     [SerializeField]private GameObject inventoryContainer;
     [SerializeField]private InventorySlot[] inventorySlots;
     [SerializeField]private GameState gameState;
-    [SerializeField]private PlayerMovement playerMovement;
-    private InputAction _inventoryAction;
+    [SerializeField]private InputReader inputReader;
 
     private void Awake()
     {
-        _inventoryAction = playerMovement._inputActions.Player.Inventory;
         RefreshInventory();
     }
 
     private void OnEnable()
     {
-        _inventoryAction.performed += ToggleInventory;
+        inputReader.inventoryAction.performed += ToggleInventory;
     }
 
     private void OnDisable()
     {
-        _inventoryAction.performed -= ToggleInventory;
+        inputReader.inventoryAction.performed -= ToggleInventory;
     }
 
     private void RefreshInventory()

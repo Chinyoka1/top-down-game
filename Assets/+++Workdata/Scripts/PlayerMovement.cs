@@ -15,16 +15,12 @@ public class PlayerMovement : MonoBehaviour
     public bool isOnStairs;
     public float stairSlope;
 
-    public Player_InputActions _inputActions;
-    private InputAction _moveAction;
-    private InputAction _runAction;
-    private InputAction _interactAction;
-    private InputAction _attackAction;
     private Rigidbody2D rb;
     private bool _isMoving;
     private bool _isRunning;
     private Interactable _selectedInteractable;
     private Vector2 _currentVelocity;
+    [SerializeField] private InputReader inputReader;
 
     private float CurrentMoveSpeed => _isRunning ? runSpeed : walkSpeed;
 
@@ -33,34 +29,29 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        _inputActions = new Player_InputActions();
-        _moveAction = _inputActions.Player.Move;
-        _runAction = _inputActions.Player.Run;
-        _interactAction = _inputActions.Player.Interact;
-        _attackAction = _inputActions.Player.Attack;
         rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnEnable()
     {
         EnableInput();
-        _moveAction.performed += Move;
-        _moveAction.canceled += Move;
-        _runAction.performed += Run;
-        _runAction.canceled += Run;
-        _interactAction.performed += Interact;
-        _attackAction.performed += Attack;
+        inputReader.moveAction.performed += Move;
+        inputReader.moveAction.canceled += Move;
+        inputReader.runAction.performed += Run;
+        inputReader.runAction.canceled += Run;
+        inputReader.interactAction.performed += Interact;
+        inputReader.attackAction.performed += Attack;
     }
 
     private void OnDisable()
     {
         DisableInput();
-        _moveAction.performed -= Move;
-        _moveAction.canceled -= Move;
-        _runAction.performed -= Run;
-        _runAction.canceled -= Run;
-        _interactAction.performed -= Interact;
-        _attackAction.performed -= Attack;
+        inputReader.moveAction.performed -= Move;
+        inputReader.moveAction.canceled -= Move;
+        inputReader.runAction.performed -= Run;
+        inputReader.runAction.canceled -= Run;
+        inputReader.interactAction.performed -= Interact;
+        inputReader.attackAction.performed -= Attack;
     }
 
     private void FixedUpdate()
@@ -78,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
         // set player velocity with acceleration
         rb.velocity = Vector2.SmoothDamp(rb.velocity, targetVelocity, ref _currentVelocity, accelerationTime);
 
-        if (_inputActions.Player.enabled)
+        if (inputReader.GetPlayerEnabled())
         {
             Animate();
         }
@@ -111,12 +102,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void EnableInput()
     {
-        _inputActions.Enable();
+        inputReader.Enable();
     }
 
     public void DisableInput()
     {
-        _inputActions.Disable();
+        inputReader.Disable();
     }
 
     private void Move(InputAction.CallbackContext context)
