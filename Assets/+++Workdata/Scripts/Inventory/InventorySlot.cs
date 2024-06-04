@@ -11,6 +11,7 @@ public class InventorySlot : MonoBehaviour
     [SerializeField]private Image itemImage;
     [SerializeField]private TextMeshProUGUI itemAmount;
     [SerializeField]private Toggle slotToggle;
+    [SerializeField]private ItemInfo itemInfo;
 
     public void SetStateInfo(StateInfo stateInfo)
     {
@@ -46,7 +47,11 @@ public class InventorySlot : MonoBehaviour
     {
         if (slotToggle.isOn && _stateInfo != null)
         {
-            print(_stateInfo.id);
+            itemInfo.SetItemInfo(_stateInfo);
+        }
+        else
+        {
+            itemInfo.gameObject.SetActive(false);
         }
     }
 }
