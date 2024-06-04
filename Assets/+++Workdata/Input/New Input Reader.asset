@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcc7753841ba57545af37088053b57be, type: 3}
-  m_Name: InputReader
+  m_Name: New Input Reader
   m_EditorClassIdentifier: 
   moveAction:
     m_Name: Move
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 811b800e-29f7-492a-bd43-20b87f1b0ef4
+    m_Id: 9c64f629-f863-48c8-927c-77cad43550a9
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -25,7 +25,7 @@ MonoBehaviour:
     m_Name: Run
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 35f28d9c-6ce6-4a35-8de6-28797da2c461
+    m_Id: 5a10b178-2cad-438d-b1d6-0a76d01371d7
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -34,7 +34,7 @@ MonoBehaviour:
     m_Name: Interact
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: cee7047f-69fa-488f-ae09-2b5f2fc66246
+    m_Id: bf7d603e-1067-46ad-9645-6f5af1e336ee
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Name: Attack
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 10b1c9a6-dafe-4505-a9c8-897ec66e7a16
+    m_Id: ca992b57-7503-4bd0-ad4a-aa6c58d32b34
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -52,7 +52,7 @@ MonoBehaviour:
     m_Name: Inventory
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: ccbce7cf-b096-496c-ab18-1a04b01ed7cb
+    m_Id: b370c3ff-d76a-4d75-8fce-84348ce1a69b
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []

@@ -14,7 +14,7 @@ public class InputReader : ScriptableObject
     
     private Player_InputActions _inputActions;
    
-    private void Awake()
+    private void OnEnable()
     {
         _inputActions = new Player_InputActions();
         moveAction = _inputActions.Player.Move;

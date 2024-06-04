@@ -114,7 +114,7 @@ public class GameState : MonoBehaviour
             if (stateInfo.id == id) return stateInfo;
         }
 
-        return new StateInfo();
+        return null;
     }
     
     //#todo Check Conditions 

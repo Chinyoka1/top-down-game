@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -16,11 +17,19 @@ public class InventorySlot : MonoBehaviour
         _stateInfo = stateInfo;
         SetSlot();
     }
-    
+
+    private void OnEnable()
+    {
+        slotToggle.onValueChanged.AddListener(delegate {
+            HandleSlotToggle();
+        });
+    }
+
     public void Deactivate()
     {
         itemImage.gameObject.SetActive(false);
         itemAmount.gameObject.SetActive(false);
+        slotToggle.interactable = false;
         slotToggle.isOn = false;
     } 
 
@@ -30,5 +39,14 @@ public class InventorySlot : MonoBehaviour
         itemAmount.text = _stateInfo.amount.ToString();
         itemImage.gameObject.SetActive(true);
         itemAmount.gameObject.SetActive(true);
+        slotToggle.interactable = true;
+    }
+
+    private void HandleSlotToggle()
+    {
+        if (slotToggle.isOn && _stateInfo != null)
+        {
+            print(_stateInfo.id);
+        }
     }
 }
