@@ -13,27 +13,13 @@ public class InventorySlot : MonoBehaviour
     [SerializeField]private Toggle slotToggle;
     [SerializeField]private ItemInfo itemInfo;
 
-    public void SetStateInfo(StateInfo stateInfo)
-    {
-        _stateInfo = stateInfo;
-        SetSlot();
-    }
-
     private void OnEnable()
     {
         slotToggle.onValueChanged.AddListener(delegate {
             HandleSlotToggle();
         });
     }
-
-    public void Deactivate()
-    {
-        itemImage.gameObject.SetActive(false);
-        itemAmount.gameObject.SetActive(false);
-        slotToggle.interactable = false;
-        slotToggle.isOn = false;
-    } 
-
+    
     private void SetSlot()
     {
         itemImage.sprite = _stateInfo.icon;
@@ -53,5 +39,24 @@ public class InventorySlot : MonoBehaviour
         {
             itemInfo.gameObject.SetActive(false);
         }
+    }
+    
+    public void SetStateInfo(StateInfo stateInfo)
+    {
+        _stateInfo = stateInfo;
+        SetSlot();
+    }
+
+    public void Deactivate()
+    {
+        itemImage.gameObject.SetActive(false);
+        itemAmount.gameObject.SetActive(false);
+        slotToggle.interactable = false;
+        slotToggle.isOn = false;
+    }
+
+    public bool HasItem()
+    {
+        return _stateInfo != null;
     }
 }

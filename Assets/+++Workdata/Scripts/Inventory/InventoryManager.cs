@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
+    public static int inventoryLimit = 60;
+    public static int itemAmountLimit = 5;
     [SerializeField]private GameObject inventoryContainer;
     [SerializeField]private InventorySlot[] inventorySlots;
     [SerializeField]private GameState gameState;
@@ -31,14 +33,32 @@ public class InventoryManager : MonoBehaviour
     private void RefreshInventory()
     {
         List<State> states = gameState.GetStates();
+        int overflowSlots = 0;
         for (int i = 0; i < inventorySlots.Length; i++)
         {
-            if (i < states.Count)
+            // Check if there's already an item in this slot (amount limit), skip if there is
+            
+
+            int a = i - overflowSlots;
+            if (a < states.Count -1)
             {
-                StateInfo stateInfo = gameState.GetStateInfo(states[i].id);
-                stateInfo.amount = states[i].amount;
-                
-                inventorySlots[i].SetStateInfo(stateInfo);
+                StateInfo stateInfo = gameState.GetStateInfo(states[a].id);
+                // Check if the items amount is greater than the limit, if it is, fill
+                // one slot with the item and its amount limit, and fill the next slot with
+                // the rest.
+                if (states[a].amount > itemAmountLimit)
+                {
+                    stateInfo.amount = itemAmountLimit;
+                    inventorySlots[i].SetStateInfo(stateInfo);
+                    overflowSlots++;
+                    stateInfo.amount = states[a].amount - itemAmountLimit;
+                    inventorySlots[i+1].SetStateInfo(stateInfo);
+                }
+                else
+                {
+                    stateInfo.amount = states[a].amount;
+                    inventorySlots[i].SetStateInfo(stateInfo);
+                }
             }
             else
             {
