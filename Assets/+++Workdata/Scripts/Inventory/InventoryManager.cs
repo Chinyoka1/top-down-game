@@ -8,8 +8,7 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
-    public static int inventoryLimit = 60;
-    public static int itemAmountLimit = 5;
+    public int slotLimit = 60;
     [SerializeField] private GameObject inventoryContainer;
     [SerializeField] private InventorySlot[] inventorySlots;
     [SerializeField] private GameState gameState;
@@ -30,26 +29,6 @@ public class InventoryManager : MonoBehaviour
         inputReader.inventoryAction.performed -= ToggleInventory;
     }
 
-    private void RefreshInventory()
-    {
-        List<State> states = gameState.GetStates();
-        int a = 0;
-        foreach (InventorySlot inventorySlot in inventorySlots)
-        {
-            if (a < states.Count)
-            {
-                StateInfo stateInfo = gameState.GetStateInfo(states[a].id);
-                stateInfo.amount = states[a].amount;
-                inventorySlot.SetStateInfo(stateInfo);
-                a++;
-            }
-            else
-            {
-                inventorySlot.Deactivate();
-            }
-        }
-    }
-
     private void ToggleInventory(InputAction.CallbackContext context)
     {
         if (inventoryContainer.activeInHierarchy)
@@ -58,7 +37,7 @@ public class InventoryManager : MonoBehaviour
         }
         else
         {
-            RefreshInventoryStackLimit();
+            RefreshInventory();
         }
         inventoryContainer.SetActive(!inventoryContainer.activeInHierarchy);
     }
@@ -71,7 +50,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
     
-    private void RefreshInventoryStackLimit()
+    private void RefreshInventory()
     {
         List<State> states = gameState.GetStates();
         int a = 0;
@@ -94,7 +73,15 @@ public class InventoryManager : MonoBehaviour
                     for (int j = 0; rest > 0; j++)
                     {
                         // create slot with full stack, return rest and assign it as new amount
-                        rest = inventorySlots[i+j].SetStateInfoAndReturnRest(stateInfo);
+                        inventorySlots[i+j].SetStateInfo(stateInfo);
+                        if (stateInfo.amount > stateInfo.stackSize)
+                        {
+                            rest = stateInfo.amount - stateInfo.stackSize;
+                        }
+                        else
+                        {
+                            rest = 0;
+                        }
                         stateInfo.amount = rest;
                     }
                 }
@@ -104,65 +91,6 @@ public class InventoryManager : MonoBehaviour
                 }
 
                 a++;
-            }
-            else
-            {
-                inventorySlots[i].Deactivate();
-            }
-        }
-    }
-    
-    private void RefreshInventoryAmountLimit()
-    {
-        List<State> states = gameState.GetStates();
-        int overflowSlots = 0;
-        for (int i = 0; i < inventorySlots.Length; i++)
-        {
-            // Check if this slot has already been filled with an item in the previous iteration,
-            // skip if it has
-            if (i > 0 && inventorySlots[i].HasItem()) continue;
-            
-            int a = i - overflowSlots;
-            if (a < states.Count)
-            {
-                StateInfo stateInfo = gameState.GetStateInfo(states[a].id);
-                // Check if the items amount is greater than the limit, if it is, fill
-                // one slot with the item and its amount limit, and fill the next slot with
-                // the rest.
-                
-                //print(states[a].id + ": " + states[a].amount);
-                if (states[a].amount > itemAmountLimit)
-                {
-                    int fullSlots = states[a].amount / itemAmountLimit;
-                    int itemRemainder = states[a].amount % itemAmountLimit;
-                    
-                    stateInfo.amount = itemAmountLimit;
-                    // set all full slots
-                    for (int j = 0; j < fullSlots; j++)
-                    {
-                        inventorySlots[i + j].SetStateInfo(stateInfo);
-                        overflowSlots++;
-                    }
-
-                    // set the slot that isn't full
-                    if (itemRemainder > 0)
-                    {
-                        StateInfo overflow = new StateInfo
-                        {
-                            id = stateInfo.id,
-                            name = stateInfo.name,
-                            icon = stateInfo.icon,
-                            description = stateInfo.description,
-                            amount = itemRemainder
-                        };
-                        inventorySlots[i + fullSlots].SetStateInfo(overflow);
-                    }
-                }
-                else
-                {
-                    stateInfo.amount = states[a].amount;
-                    inventorySlots[i].SetStateInfo(stateInfo);
-                }
             }
             else
             {
