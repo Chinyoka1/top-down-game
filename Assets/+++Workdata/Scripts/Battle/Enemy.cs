@@ -7,7 +7,6 @@ public class Enemy : MonoBehaviour
 {
     public DetectionZone soundDetectionZone;
     public DetectionZone viewDetectionZone;
-    public Transform colliderCenterPoint;
     public float walkSpeed = 2f;
     
     private Collider2D soundTarget;
@@ -48,19 +47,6 @@ public class Enemy : MonoBehaviour
         // set the enemy's movement direction in the animator
         anim.SetFloat(AnimatorStrings.directionX, soundTarget.transform.position.x - transform.position.x);
         anim.SetFloat(AnimatorStrings.directionY, soundTarget.transform.position.y - transform.position.y);
-
-
-
-        if (soundTarget.transform.position.y - transform.position.y > 0)
-        {
-            colliderCenterPoint.position =
-                new Vector3(colliderCenterPoint.position.y, colliderCenterPoint.position.x, 180f);
-        }
-        if (soundTarget.transform.position.y - transform.position.y > 0)
-        {
-            colliderCenterPoint.position =
-                new Vector3(colliderCenterPoint.position.y, colliderCenterPoint.position.x, 180f);
-        }
     }
 
     private void AttackViewTarget()

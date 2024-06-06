@@ -63,6 +63,23 @@ public class GameController : MonoBehaviour
     {
         EnterPlayMode();
     }
+    
+    private void EnterInventoryMode()
+    {
+        Time.timeScale = 1;
+        //Cursor.lockState = CursorLockMode.Locked;
+        player.DisableInput(); 
+    }
+
+    public void StartInventoryMode()
+    {
+        EnterInventoryMode();
+    }
+    
+    public void EndInventoryMode()
+    {
+        EnterPlayMode();
+    }
 
     public void SetLastSelectable()
     {

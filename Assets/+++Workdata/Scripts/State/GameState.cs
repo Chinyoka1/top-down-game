@@ -9,6 +9,8 @@ public class GameState : MonoBehaviour
     public static event Action StateChanged;
     public static event Action<string, int> StateAdded;
 
+    private InventoryManager inventoryManager;
+
     #region Inspector
 
     [SerializeField] private List<State> states;
@@ -16,6 +18,11 @@ public class GameState : MonoBehaviour
     public StateInfo[] stateInfos;
 
     #endregion
+
+    private void Awake()
+    {
+        inventoryManager = FindObjectOfType<InventoryManager>();
+    }
 
     public State Get(string id)
     {
@@ -88,7 +95,16 @@ public class GameState : MonoBehaviour
 
     public void Add(State state, bool invokeEvent = true)
     {
-        Add(state.id, state.amount, invokeEvent);
+        // check filled slots in inventory
+        inventoryManager.RefreshInventory();
+        if (inventoryManager.inventorySlotLimit > inventoryManager.filledSlots)
+        {
+            Add(state.id, state.amount, invokeEvent);
+        }
+        else
+        {
+            print("inventory is full");
+        }
     }
 
 

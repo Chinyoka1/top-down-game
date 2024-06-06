@@ -8,7 +8,9 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
-    public int slotLimit = 60;
+    public int filledSlots;
+    public int inventorySlotLimit = 60;
+    
     [SerializeField] private GameObject inventoryContainer;
     [SerializeField] private InventorySlot[] inventorySlots;
     [SerializeField] private GameState gameState;
@@ -31,14 +33,7 @@ public class InventoryManager : MonoBehaviour
 
     private void ToggleInventory(InputAction.CallbackContext context)
     {
-        if (inventoryContainer.activeInHierarchy)
-        {
-            ClearInventory();
-        }
-        else
-        {
-            RefreshInventory();
-        }
+        RefreshInventory();
         inventoryContainer.SetActive(!inventoryContainer.activeInHierarchy);
     }
 
@@ -48,10 +43,12 @@ public class InventoryManager : MonoBehaviour
         {
             inventorySlot.Deactivate();
         }
+        filledSlots = 0;
     }
     
-    private void RefreshInventory()
+    public void RefreshInventory()
     {
+        ClearInventory();
         List<State> states = gameState.GetStates();
         int a = 0;
         for (int i = 0; i < inventorySlots.Length; i++)
@@ -72,8 +69,10 @@ public class InventoryManager : MonoBehaviour
                     int rest = stateInfo.amount - stateInfo.stackSize;
                     for (int j = 0; rest > 0; j++)
                     {
-                        // create slot with full stack, return rest and assign it as new amount
+                        // create slot with full stack
                         inventorySlots[i+j].SetStateInfo(stateInfo);
+                        filledSlots++;
+                        // assign rest to amount
                         if (stateInfo.amount > stateInfo.stackSize)
                         {
                             rest = stateInfo.amount - stateInfo.stackSize;
@@ -88,6 +87,7 @@ public class InventoryManager : MonoBehaviour
                 else
                 {
                     inventorySlots[i].SetStateInfo(stateInfo);
+                    filledSlots++;
                 }
 
                 a++;

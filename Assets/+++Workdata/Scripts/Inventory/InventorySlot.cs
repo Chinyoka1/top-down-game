@@ -13,6 +13,8 @@ public class InventorySlot : MonoBehaviour
     [SerializeField]private Toggle slotToggle;
     [SerializeField]private ItemInfo itemInfo;
 
+    #region private methods
+
     private void OnEnable()
     {
         slotToggle.onValueChanged.AddListener(delegate {
@@ -44,7 +46,11 @@ public class InventorySlot : MonoBehaviour
             itemInfo.gameObject.SetActive(false);
         }
     }
-    
+
+    #endregion
+
+    #region public methods
+
     public void SetStateInfo(StateInfo stateInfo)
     {
         _stateInfo = stateInfo;
@@ -64,4 +70,6 @@ public class InventorySlot : MonoBehaviour
     {
         return _stateInfo != null;
     }
+
+    #endregion
 }

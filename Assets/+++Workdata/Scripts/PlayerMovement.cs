@@ -18,8 +18,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private bool _isMoving;
     private bool _isRunning;
-    private Interactable _selectedInteractable;
     private Vector2 _currentVelocity;
+    [SerializeField] private List<Interactable> selectedInteractables;
     [SerializeField] private InputReader inputReader;
 
     private float CurrentMoveSpeed => _isRunning ? runSpeed : walkSpeed;
@@ -140,9 +140,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Interact(InputAction.CallbackContext context)
     {
-        if (_selectedInteractable != null)
+        if (selectedInteractables.Count > 0)
         {
-            _selectedInteractable.Interact();
+            selectedInteractables[0].Interact();
+            StartCoroutine(CheckLastInteraction());
+        }
+    }
+
+    IEnumerator CheckLastInteraction()
+    {
+        yield return null;
+        if (selectedInteractables.Count > 0 && selectedInteractables[0] == null)
+        {
+            selectedInteractables.RemoveAt(0);
         }
     }
 
@@ -176,13 +186,8 @@ public class PlayerMovement : MonoBehaviour
         Interactable interactable = col.GetComponent<Interactable>();
         if (interactable == null) return;
 
-        if (_selectedInteractable != null)
-        {
-            _selectedInteractable.Deselect();
-        }
-
-        _selectedInteractable = interactable;
-        _selectedInteractable.Select();
+        selectedInteractables.Add(interactable);
+        interactable.Select();
     }
 
     private void TryDeselectInteractable(Collider2D col)
@@ -190,10 +195,19 @@ public class PlayerMovement : MonoBehaviour
         Interactable interactable = col.GetComponent<Interactable>();
         if (interactable == null) return;
 
-        if (interactable == _selectedInteractable)
+        //if (selectedInteractables.Contains(interactable))
+        //{
+        //    interactable.Deselect();
+        //    selectedInteractables.RemoveAt(selectedInteractables.IndexOf(interactable));
+        //}
+
+        for (int i = 0; i < selectedInteractables.Count; i++)
         {
-            _selectedInteractable.Deselect();
-            _selectedInteractable = null;
+            if (selectedInteractables[i] == interactable)
+            {
+                selectedInteractables[i].Deselect();
+                selectedInteractables.RemoveAt(i);
+            }
         }
     }
 
