@@ -52,8 +52,23 @@ public class InventoryManager : MonoBehaviour
 
     private void ToggleInventory(InputAction.CallbackContext context)
     {
-        RefreshInventoryStackLimit();
+        if (inventoryContainer.activeInHierarchy)
+        {
+            ClearInventory();
+        }
+        else
+        {
+            RefreshInventoryStackLimit();
+        }
         inventoryContainer.SetActive(!inventoryContainer.activeInHierarchy);
+    }
+
+    private void ClearInventory()
+    {
+        foreach (InventorySlot inventorySlot in inventorySlots)
+        {
+            inventorySlot.Deactivate();
+        }
     }
     
     private void RefreshInventoryStackLimit()
@@ -62,6 +77,10 @@ public class InventoryManager : MonoBehaviour
         int a = 0;
         for (int i = 0; i < inventorySlots.Length; i++)
         {
+            // Check if this slot has already been filled with an item in a previous iteration,
+            // skip if it has
+            if (inventorySlots[i].HasItem()) continue;
+            
             if (a < states.Count)
             {
                 StateInfo stateInfo = gameState.GetStateInfo(states[a].id);
@@ -72,6 +91,7 @@ public class InventoryManager : MonoBehaviour
                     for (int j = 0; rest > 0; j++)
                     {
                         rest = inventorySlots[i+j].SetStateInfoAndReturnRest(stateInfo);
+                        stateInfo.amount = rest;
                     }
                 }
                 else

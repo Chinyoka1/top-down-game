@@ -38,7 +38,7 @@ public class InventorySlot : MonoBehaviour
         if (_stateInfo.amount > _stateInfo.stackSize)
         {
             itemAmount.text = _stateInfo.stackSize.ToString();
-            return _stateInfo.stackSize - _stateInfo.amount;
+            return _stateInfo.amount - _stateInfo.stackSize;
         }
         itemAmount.text = _stateInfo.amount.ToString();
         return 0;
@@ -70,6 +70,7 @@ public class InventorySlot : MonoBehaviour
 
     public void Deactivate()
     {
+        _stateInfo = null;
         itemImage.gameObject.SetActive(false);
         itemAmount.gameObject.SetActive(false);
         slotToggle.interactable = false;
