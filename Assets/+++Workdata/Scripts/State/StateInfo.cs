@@ -15,4 +15,6 @@ public class StateInfo
     public Sprite icon;
 
     public string description;
+
+    public int stackSize;
 }

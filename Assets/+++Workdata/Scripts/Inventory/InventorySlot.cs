@@ -28,6 +28,21 @@ public class InventorySlot : MonoBehaviour
         itemAmount.gameObject.SetActive(true);
         slotToggle.interactable = true;
     }
+    
+    private int SetSlotAndReturnRest()
+    {
+        itemImage.sprite = _stateInfo.icon;
+        itemImage.gameObject.SetActive(true);
+        itemAmount.gameObject.SetActive(true);
+        slotToggle.interactable = true;
+        if (_stateInfo.amount > _stateInfo.stackSize)
+        {
+            itemAmount.text = _stateInfo.stackSize.ToString();
+            return _stateInfo.stackSize - _stateInfo.amount;
+        }
+        itemAmount.text = _stateInfo.amount.ToString();
+        return 0;
+    }
 
     private void HandleSlotToggle()
     {
@@ -39,6 +54,12 @@ public class InventorySlot : MonoBehaviour
         {
             itemInfo.gameObject.SetActive(false);
         }
+    }
+    
+    public int SetStateInfoAndReturnRest(StateInfo stateInfo)
+    {
+        _stateInfo = stateInfo;
+        return SetSlotAndReturnRest();
     }
     
     public void SetStateInfo(StateInfo stateInfo)

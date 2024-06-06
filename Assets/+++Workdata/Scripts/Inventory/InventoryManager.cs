@@ -33,11 +33,71 @@ public class InventoryManager : MonoBehaviour
     private void RefreshInventory()
     {
         List<State> states = gameState.GetStates();
+        int a = 0;
+        foreach (InventorySlot inventorySlot in inventorySlots)
+        {
+            if (a < states.Count)
+            {
+                StateInfo stateInfo = gameState.GetStateInfo(states[a].id);
+                stateInfo.amount = states[a].amount;
+                inventorySlot.SetStateInfo(stateInfo);
+                a++;
+            }
+            else
+            {
+                inventorySlot.Deactivate();
+            }
+        }
+    }
+
+    private void ToggleInventory(InputAction.CallbackContext context)
+    {
+        RefreshInventoryStackLimit();
+        inventoryContainer.SetActive(!inventoryContainer.activeInHierarchy);
+    }
+    
+    private void RefreshInventoryStackLimit()
+    {
+        List<State> states = gameState.GetStates();
+        int a = 0;
+        for (int i = 0; i < inventorySlots.Length; i++)
+        {
+            if (a < states.Count)
+            {
+                StateInfo stateInfo = gameState.GetStateInfo(states[a].id);
+                stateInfo.amount = states[a].amount;
+                if (stateInfo.amount > stateInfo.stackSize)
+                {
+                    int rest = stateInfo.amount - stateInfo.stackSize;
+                    for (int j = 0; rest > 0; j++)
+                    {
+                        rest = inventorySlots[i+j].SetStateInfoAndReturnRest(stateInfo);
+                    }
+                }
+                else
+                {
+                    inventorySlots[i].SetStateInfo(stateInfo);
+                }
+
+                a++;
+            }
+            else
+            {
+                inventorySlots[i].Deactivate();
+            }
+        }
+    }
+    
+    private void RefreshInventoryAmountLimit()
+    {
+        List<State> states = gameState.GetStates();
         int overflowSlots = 0;
         for (int i = 0; i < inventorySlots.Length; i++)
         {
-            // Check if there's already an item in this slot, skip if there is
+            // Check if this slot has already been filled with an item in the previous iteration,
+            // skip if it has
             if (i > 0 && inventorySlots[i].HasItem()) continue;
+            
             int a = i - overflowSlots;
             if (a < states.Count)
             {
@@ -45,18 +105,21 @@ public class InventoryManager : MonoBehaviour
                 // Check if the items amount is greater than the limit, if it is, fill
                 // one slot with the item and its amount limit, and fill the next slot with
                 // the rest.
-                print(states[a].id + ": " + states[a].amount);
+                
+                //print(states[a].id + ": " + states[a].amount);
                 if (states[a].amount > itemAmountLimit)
                 {
                     int fullSlots = states[a].amount / itemAmountLimit;
                     int itemRemainder = states[a].amount % itemAmountLimit;
+                    
                     stateInfo.amount = itemAmountLimit;
                     // set all full slots
                     for (int j = 0; j < fullSlots; j++)
                     {
-                        inventorySlots[i+j].SetStateInfo(stateInfo);
+                        inventorySlots[i + j].SetStateInfo(stateInfo);
                         overflowSlots++;
                     }
+
                     // set the slot that isn't full
                     if (itemRemainder > 0)
                     {
@@ -68,7 +131,7 @@ public class InventoryManager : MonoBehaviour
                             description = stateInfo.description,
                             amount = itemRemainder
                         };
-                        inventorySlots[i+fullSlots].SetStateInfo(overflow);
+                        inventorySlots[i + fullSlots].SetStateInfo(overflow);
                     }
                 }
                 else
@@ -82,11 +145,5 @@ public class InventoryManager : MonoBehaviour
                 inventorySlots[i].Deactivate();
             }
         }
-    }
-
-    private void ToggleInventory(InputAction.CallbackContext context)
-    {
-        RefreshInventory();
-        inventoryContainer.SetActive(!inventoryContainer.activeInHierarchy);
     }
 }
