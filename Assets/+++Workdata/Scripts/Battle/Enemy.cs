@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     public DetectionZone soundDetectionZone;
     public DetectionZone viewDetectionZone;
     public float walkSpeed = 2f;
-    
+
     private Collider2D soundTarget;
     private Collider2D viewTarget;
     private Animator anim;
@@ -43,10 +43,55 @@ public class Enemy : MonoBehaviour
     {
         soundTarget = soundDetectionZone.detectedCollider;
         // make the enemy follow the player (soundTarget)
-        transform.position = Vector3.MoveTowards(transform.position, soundTarget.transform.position, walkSpeed * Time.deltaTime);
+        transform.position =
+            Vector3.MoveTowards(transform.position, soundTarget.transform.position, walkSpeed * Time.deltaTime);
         // set the enemy's movement direction in the animator
-        anim.SetFloat(AnimatorStrings.directionX, soundTarget.transform.position.x - transform.position.x);
-        anim.SetFloat(AnimatorStrings.directionY, soundTarget.transform.position.y - transform.position.y);
+        float dirX = soundTarget.transform.position.x - transform.position.x;
+        float dirY = soundTarget.transform.position.y - transform.position.y;
+        anim.SetFloat(AnimatorStrings.directionX, dirX);
+        anim.SetFloat(AnimatorStrings.directionY, dirY);
+        RotateX(dirX, dirY);
+    }
+
+    private void RotateX(float dirX, float dirY)
+    {
+        // check which direction enemy is faced and set the viewDetectionZone rotation
+        if (dirX > 0)
+        {
+            // if dirY is stronger than dirX, use dirY instead
+            if (dirY > dirX || dirY * -1 > dirX)
+            {
+                RotateY(dirY);
+            }
+            else
+            {
+                viewDetectionZone.transform.eulerAngles = Vector3.forward * 90; // right
+            }
+        }
+        else if (dirX < 0)
+        {
+            // if dirY is stronger than dirX, use dirY instead
+            if (dirY < dirX || dirY * -1 < dirX)
+            {
+                RotateY(dirY);
+            }
+            else
+            {
+                viewDetectionZone.transform.eulerAngles = Vector3.forward * -90; // left
+            }
+        }
+    }
+
+    private void RotateY(float dirY)
+    {
+        if (dirY > 0)
+        {
+            viewDetectionZone.transform.eulerAngles = Vector3.forward * 180; // up
+        }
+        else if (dirY < 0)
+        {
+            viewDetectionZone.transform.eulerAngles = Vector3.forward * 0; // down
+        }
     }
 
     private void AttackViewTarget()
