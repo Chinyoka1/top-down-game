@@ -73,15 +73,6 @@ namespace UnityEngine.InputSystem
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Inventory"",
-                    ""type"": ""Button"",
-                    ""id"": ""38bd8333-381e-4c95-b7ed-3abda8000a36"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -335,17 +326,6 @@ namespace UnityEngine.InputSystem
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interact"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""dd2ca3a5-acb4-468b-b3c4-924383226503"",
-                    ""path"": ""<Keyboard>/i"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Inventory"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -980,7 +960,6 @@ namespace UnityEngine.InputSystem
             m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
             m_Player_Run = m_Player.FindAction("Run", throwIfNotFound: true);
             m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
-            m_Player_Inventory = m_Player.FindAction("Inventory", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1060,7 +1039,6 @@ namespace UnityEngine.InputSystem
         private readonly InputAction m_Player_Attack;
         private readonly InputAction m_Player_Run;
         private readonly InputAction m_Player_Interact;
-        private readonly InputAction m_Player_Inventory;
         public struct PlayerActions
         {
             private @Player_InputActions m_Wrapper;
@@ -1070,7 +1048,6 @@ namespace UnityEngine.InputSystem
             public InputAction @Attack => m_Wrapper.m_Player_Attack;
             public InputAction @Run => m_Wrapper.m_Player_Run;
             public InputAction @Interact => m_Wrapper.m_Player_Interact;
-            public InputAction @Inventory => m_Wrapper.m_Player_Inventory;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -1095,9 +1072,6 @@ namespace UnityEngine.InputSystem
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
-                @Inventory.started += instance.OnInventory;
-                @Inventory.performed += instance.OnInventory;
-                @Inventory.canceled += instance.OnInventory;
             }
 
             private void UnregisterCallbacks(IPlayerActions instance)
@@ -1117,9 +1091,6 @@ namespace UnityEngine.InputSystem
                 @Interact.started -= instance.OnInteract;
                 @Interact.performed -= instance.OnInteract;
                 @Interact.canceled -= instance.OnInteract;
-                @Inventory.started -= instance.OnInventory;
-                @Inventory.performed -= instance.OnInventory;
-                @Inventory.canceled -= instance.OnInventory;
             }
 
             public void RemoveCallbacks(IPlayerActions instance)
@@ -1315,7 +1286,6 @@ namespace UnityEngine.InputSystem
             void OnAttack(InputAction.CallbackContext context);
             void OnRun(InputAction.CallbackContext context);
             void OnInteract(InputAction.CallbackContext context);
-            void OnInventory(InputAction.CallbackContext context);
         }
         public interface IUIActions
         {

@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnEnable()
     {
-        EnableInput();
+        inputReader.Enable();
         inputReader.moveAction.performed += Move;
         inputReader.moveAction.canceled += Move;
         inputReader.runAction.performed += Run;
@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDisable()
     {
-        DisableInput();
+        inputReader.Disable();
         inputReader.moveAction.performed -= Move;
         inputReader.moveAction.canceled -= Move;
         inputReader.runAction.performed -= Run;

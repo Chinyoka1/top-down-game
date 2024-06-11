@@ -15,10 +15,12 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private InventorySlot[] inventorySlots;
     [SerializeField] private GameState gameState;
     [SerializeField] private InputReader inputReader;
+    private GameController gameController;
 
     private void Awake()
     {
         RefreshInventory();
+        gameController = FindObjectOfType<GameController>();
     }
 
     private void OnEnable()
@@ -35,6 +37,14 @@ public class InventoryManager : MonoBehaviour
     {
         RefreshInventory();
         inventoryContainer.SetActive(!inventoryContainer.activeInHierarchy);
+        if (inventoryContainer.activeInHierarchy)
+        {
+            gameController.StartInventoryMode();
+        }
+        else
+        {
+            gameController.EndInventoryMode();
+        }
     }
 
     private void ClearInventory()

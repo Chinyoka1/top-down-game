@@ -6,6 +6,7 @@ public class GameController : MonoBehaviour
 {
     private PlayerMovement player;
     private DialogueController dialogueController;
+    [SerializeField] private InputReader inputReader;
 
     public Button lastSelectable;
     #region Unity Event Functions
@@ -41,14 +42,14 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
         // In the editor: Unlock with ESC.
         //Cursor.lockState = CursorLockMode.Locked;
-        player.EnableInput();
+        inputReader.EnablePlayerInput();
     }
 
     private void EnterDialogueMode()
     {
         Time.timeScale = 1;
         //Cursor.lockState = CursorLockMode.Locked;
-        player.DisableInput(); 
+        inputReader.DisablePlayerInput();
     }
 
     #endregion
@@ -66,9 +67,8 @@ public class GameController : MonoBehaviour
     
     private void EnterInventoryMode()
     {
-        Time.timeScale = 1;
-        //Cursor.lockState = CursorLockMode.Locked;
-        player.DisableInput(); 
+        Time.timeScale = 0;
+        inputReader.DisablePlayerInput();
     }
 
     public void StartInventoryMode()
