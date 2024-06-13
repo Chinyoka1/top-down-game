@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/+++Workdata/Scenes/TheVoid.unity
     guid: 6fe19ebf708111d438b9f7209ec15dfc
+  - enabled: 1
+    path: Assets/+++Workdata/Scenes/PreMenu.unity
+    guid: 222e13cffeb8939409d27aa90419fbb0
+  - enabled: 1
+    path: Assets/+++Workdata/Scenes/MainMenu.unity
+    guid: 0eb740337d7490e46bfb355c34af60c3
   m_configObjects: {}

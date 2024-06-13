@@ -8,6 +8,18 @@ public class GameController : MonoBehaviour
     private DialogueController dialogueController;
     [SerializeField] private InputReader inputReader;
 
+    public enum GameMode
+    {
+        PreMenu,
+        MainMenu,
+        NewGame,
+        LoadSaveGame,
+        LoadScene,
+        DialogueMode,
+        DebugMode
+    }
+
+    public GameMode gameMode;
     public Button lastSelectable;
     #region Unity Event Functions
 
