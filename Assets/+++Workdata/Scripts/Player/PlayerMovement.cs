@@ -40,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
         inputReader.runAction.performed += Run;
         inputReader.runAction.canceled += Run;
         inputReader.interactAction.performed += Interact;
-        inputReader.attackAction.performed += Attack;
     }
 
     private void OnDisable()
@@ -51,7 +50,6 @@ public class PlayerMovement : MonoBehaviour
         inputReader.runAction.performed -= Run;
         inputReader.runAction.canceled -= Run;
         inputReader.interactAction.performed -= Interact;
-        inputReader.attackAction.performed -= Attack;
     }
 
     private void FixedUpdate()
@@ -153,17 +151,6 @@ public class PlayerMovement : MonoBehaviour
         if (selectedInteractables.Count > 0 && selectedInteractables[0] == null)
         {
             selectedInteractables.RemoveAt(0);
-        }
-    }
-
-    private void Attack(InputAction.CallbackContext context)
-    {
-        foreach (Animator animator in animators)
-        {
-            if (animator.gameObject.activeInHierarchy)
-            {
-                animator.SetTrigger(AnimatorStrings.attack);
-            }
         }
     }
 
