@@ -77,20 +77,10 @@ public class GameController : MonoBehaviour
         EnterPlayMode();
     }
     
-    private void EnterInventoryMode()
+    public void EnterInventoryMode()
     {
         Time.timeScale = 0;
         inputReader.DisablePlayerInput();
-    }
-
-    public void StartInventoryMode()
-    {
-        EnterInventoryMode();
-    }
-    
-    public void EndInventoryMode()
-    {
-        EnterPlayMode();
     }
 
     public void SetLastSelectable()

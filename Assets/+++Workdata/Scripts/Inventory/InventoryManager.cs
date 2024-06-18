@@ -37,14 +37,6 @@ public class InventoryManager : MonoBehaviour
     {
         RefreshInventory();
         inventoryContainer.SetActive(!inventoryContainer.activeInHierarchy);
-        if (inventoryContainer.activeInHierarchy)
-        {
-            gameController.StartInventoryMode();
-        }
-        else
-        {
-            gameController.EndInventoryMode();
-        }
     }
 
     private void ClearInventory()

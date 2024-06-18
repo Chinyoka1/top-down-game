@@ -13230,42 +13230,49 @@ MonoBehaviour:
     description: A misterious bottle. You can't figure out what's inside without
       opening it.
     stackSize: 5
+    type: 0
   - id: item_apple
     name: Apple
     amount: 0
     icon: {fileID: 867978155, guid: 985d42a2b6a3bf14f9c443829443c88a, type: 3}
     description: A fresh red apple from the flower forest farm. Delicious!
     stackSize: 5
+    type: 4
   - id: item_bread
     name: Bread
     amount: 0
     icon: {fileID: 695366588, guid: 06adf066ffa8953418a77053a7e8a1f9, type: 3}
     description: Bread from the city bakery. It's still warm from the oven.
     stackSize: 5
+    type: 4
   - id: item_lighter
     name: Lighter
     amount: 0
     icon: {fileID: 659282100, guid: 985d42a2b6a3bf14f9c443829443c88a, type: 3}
     description: A tool used to make fire or create a small light source.
     stackSize: 1
+    type: 2
   - id: item_berries
     name: Berries
     amount: 0
     icon: {fileID: 1795134120, guid: 985d42a2b6a3bf14f9c443829443c88a, type: 3}
     description: Sweet berries from the forest.
     stackSize: 5
+    type: 4
   - id: item_gold_coin
     name: Coins
     amount: 0
     icon: {fileID: -1211318693, guid: 985d42a2b6a3bf14f9c443829443c88a, type: 3}
     description: Needed to purchase things in the city.
     stackSize: 99
+    type: 5
   - id: equipment_glasses
     name: Glasses
     amount: 0
     icon: {fileID: -637689001, guid: b369f6f719b652a45a4efaa472710122, type: 3}
     description: Wear these to see better or protect your eyes.
     stackSize: 1
+    type: 3
   - id: equipment_hat
     name: Hat
     amount: 0
@@ -13273,18 +13280,28 @@ MonoBehaviour:
     description: It probably doesn't give you much protection, but at least it looks
       fancy.
     stackSize: 1
+    type: 3
   - id: item_health_potion
     name: Health Potion +20
     amount: 0
     icon: {fileID: -2028212168, guid: 985d42a2b6a3bf14f9c443829443c88a, type: 3}
     description: A small potion that instantly heals 20 HP.
     stackSize: 5
+    type: 4
   - id: item_sword
     name: Rusty Sword
     amount: 0
-    icon: {fileID: -1494264647, guid: 4cd68f7f816c8b64b85dabc75acbf286, type: 3}
+    icon: {fileID: 463141586, guid: ea5d525ac18b4984dbfa37e3af7c85c8, type: 3}
     description: Probably better than nothing if you get attacked by a monster.
     stackSize: 1
+    type: 1
+  - id: item_scythe
+    name: Rusty Scythe
+    amount: 0
+    icon: {fileID: -1753173503, guid: ea5d525ac18b4984dbfa37e3af7c85c8, type: 3}
+    description: A simple scythe used to harvest crops
+    stackSize: 1
+    type: 2
 --- !u!114 &9074694476192733352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25399,7 +25416,7 @@ Transform:
   m_GameObject: {fileID: 6667370781336579847}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.32, y: 106.53, z: -10}
+  m_LocalPosition: {x: 4.18, y: 108.33, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

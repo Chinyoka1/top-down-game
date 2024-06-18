@@ -17,4 +17,16 @@ public class StateInfo
     public string description;
 
     public int stackSize;
+
+    public enum ItemType
+    {
+        Resource,
+        Weapon,
+        Tool,
+        Armor,
+        Consumable,
+        Currency
+    }
+
+    public ItemType type;
 }
