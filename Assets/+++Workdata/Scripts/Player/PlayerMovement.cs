@@ -182,19 +182,10 @@ public class PlayerMovement : MonoBehaviour
         Interactable interactable = col.GetComponent<Interactable>();
         if (interactable == null) return;
 
-        //if (selectedInteractables.Contains(interactable))
-        //{
-        //    interactable.Deselect();
-        //    selectedInteractables.RemoveAt(selectedInteractables.IndexOf(interactable));
-        //}
-
-        for (int i = 0; i < selectedInteractables.Count; i++)
+        if (selectedInteractables.Contains(interactable))
         {
-            if (selectedInteractables[i] == interactable)
-            {
-                selectedInteractables[i].Deselect();
-                selectedInteractables.RemoveAt(i);
-            }
+            interactable.Deselect();
+            selectedInteractables.RemoveAt(selectedInteractables.IndexOf(interactable));
         }
     }
 

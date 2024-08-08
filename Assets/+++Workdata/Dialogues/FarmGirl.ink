@@ -18,11 +18,13 @@ Do you want to help me?
 = help_accepted
 That's awesome, we could really use another pair of hands!
 But first, why don't you talk to my sister?
+~ Event("Dialogue Ended")
 You could play with her while I prepare everything we need!
 -> END
 
 = help_declined
 I understand, hard work on the farm isn't for everyone.
+~ Event("Dialogue Ended")
 Come back if you change your mind though!
 -> END
 

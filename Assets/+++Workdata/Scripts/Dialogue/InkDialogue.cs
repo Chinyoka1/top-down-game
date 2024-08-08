@@ -1,4 +1,6 @@
 using UnityEngine;
+using System;
+using UnityEngine.Events;
 
 public class InkDialogue : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class InkDialogue : MonoBehaviour
     [SerializeField] private string dialoguePath;
     
     #endregion
+    
     public void StartDialogue()
     {
         if (string.IsNullOrWhiteSpace(dialoguePath))
