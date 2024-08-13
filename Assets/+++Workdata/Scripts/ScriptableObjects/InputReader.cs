@@ -11,7 +11,7 @@ public class InputReader : ScriptableObject
     public InputAction interactAction;
     public InputAction attackAction;
     public InputAction inventoryAction;
-    public InputAction scytheAction;
+    public InputAction toolAction;
     
     private Player_InputActions _inputActions;
    
@@ -22,7 +22,7 @@ public class InputReader : ScriptableObject
         runAction = _inputActions.Player.Run;
         interactAction = _inputActions.Player.Interact;
         attackAction = _inputActions.Player.Attack;
-        scytheAction = _inputActions.Player.Scythe;
+        toolAction = _inputActions.Player.Tool;
         inventoryAction = _inputActions.UI.Inventory;
     }
 

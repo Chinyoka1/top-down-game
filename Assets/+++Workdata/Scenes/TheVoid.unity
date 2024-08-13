@@ -8815,7 +8815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 0}
   anim: {fileID: 0}
-  fadeType: 1
+  fadeType: 0
   changeScene: 1
   sceneName: GameplayScene
 --- !u!1660057539 &9223372036854775807

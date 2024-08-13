@@ -13,13 +13,13 @@ public class PlayerAction : MonoBehaviour
     {
         animators = GetComponent<PlayerMovement>().animators;
         inputReader.attackAction.performed += Attack;
-        inputReader.scytheAction.performed += Scythe;
+        inputReader.toolAction.performed += UseTool;
     }
 
     private void OnDisable()
     {
         inputReader.attackAction.performed -= Attack;
-        inputReader.scytheAction.performed -= Scythe;
+        inputReader.toolAction.performed -= UseTool;
     }
     
     private void Attack(InputAction.CallbackContext context)
@@ -33,13 +33,13 @@ public class PlayerAction : MonoBehaviour
         }
     }
     
-    private void Scythe(InputAction.CallbackContext context)
+    private void UseTool(InputAction.CallbackContext context)
     {
         foreach (Animator animator in animators)
         {
             if (animator.gameObject.activeInHierarchy)
             {
-                animator.SetTrigger(AnimatorStrings.scythe);
+                animator.SetTrigger(AnimatorStrings.useTool);
             }
         }
     }
