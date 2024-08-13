@@ -16,6 +16,13 @@ public class TeleportBehaviour : MonoBehaviour
     private string fadeInAnimation;
     private string fadeOutAnimation;
 
+    private GameController gameController;
+
+    private void Awake()
+    {
+        gameController = FindObjectOfType<GameController>();
+    }
+
     private void Start()
     {
         switch (fadeType)
@@ -27,6 +34,7 @@ public class TeleportBehaviour : MonoBehaviour
                 fadeOutAnimation = "black_panel_fade_in";
                 break;
             }
+            // funktioniert manchmal random nicht mehr, einmal "Black" 
             case FadeType.Circle:
             {
                 anim = GameObject.Find("CircleFade").GetComponent<Animator>();
@@ -58,13 +66,15 @@ public class TeleportBehaviour : MonoBehaviour
         yield return new WaitForSeconds(1);
         if (changeScene)
         {
+            gameController.gameMode = GameController.GameMode.LoadScene;
             SceneManager.LoadScene(sceneName);
         }
         else
         {
             other.transform.position = spawnPos.position;
         }
-        yield return new WaitForSeconds(.5f);
+        // funktioniert nicht bei scene change
+        yield return new WaitForSeconds(2);
         anim.Play(fadeInAnimation);
     }
 }

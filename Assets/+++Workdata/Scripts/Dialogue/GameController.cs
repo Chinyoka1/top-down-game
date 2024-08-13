@@ -77,7 +77,7 @@ public class GameController : MonoBehaviour
         EnterPlayMode();
     }
     
-    public void EnterInventoryMode()
+    public void EnterPauseMode()
     {
         Time.timeScale = 0;
         inputReader.DisablePlayerInput();

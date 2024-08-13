@@ -21,7 +21,10 @@ public class SaveManager : MonoBehaviour
         float posY = PlayerPrefs.GetFloat("PlayerPosY");
         string sceneName = PlayerPrefs.GetString("Scene");
 
-        //SceneManager.LoadScene(sceneName);
+        if (SceneManager.GetActiveScene().name != sceneName)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
         Transform player = FindObjectOfType<PlayerMovement>().transform;
         player.position = new Vector3(posX, posY, 0);
     }

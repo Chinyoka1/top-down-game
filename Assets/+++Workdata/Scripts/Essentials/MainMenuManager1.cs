@@ -42,7 +42,8 @@ public class MainMenuManager1 : MonoBehaviour
     public void Button_Continue()
     {
         gameController.gameMode = GameController.GameMode.LoadSaveGame;
-        SceneManager.LoadScene(PlayerPrefs.GetString("Scene"));
+        //SceneManager.LoadScene(PlayerPrefs.GetString("Scene"));
+        FindObjectOfType<SaveManager>().LoadGame();
     }
 
     public void Button_Quit()

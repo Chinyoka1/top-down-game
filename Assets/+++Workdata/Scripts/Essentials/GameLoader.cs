@@ -25,7 +25,7 @@ public class GameLoader : MonoBehaviour
             case GameController.GameMode.LoadSaveGame:
             {
                 // performanter wäre mit ActionEvent
-                FindObjectOfType<SaveManager>().LoadGame();
+                //FindObjectOfType<SaveManager>().LoadGame();
                 break;
             }
             case GameController.GameMode.LoadScene:

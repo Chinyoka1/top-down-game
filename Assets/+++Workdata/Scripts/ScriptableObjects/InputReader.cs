@@ -12,6 +12,7 @@ public class InputReader : ScriptableObject
     public InputAction attackAction;
     public InputAction inventoryAction;
     public InputAction toolAction;
+    public InputAction pauseAction;
     
     private Player_InputActions _inputActions;
    
@@ -24,6 +25,7 @@ public class InputReader : ScriptableObject
         attackAction = _inputActions.Player.Attack;
         toolAction = _inputActions.Player.Tool;
         inventoryAction = _inputActions.UI.Inventory;
+        pauseAction = _inputActions.UI.Pause;
     }
 
     public void Enable()
